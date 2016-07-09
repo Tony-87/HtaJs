@@ -1,0 +1,20 @@
+<div ms-controller="c-controller" style="border:solid 1px #0000FF">
+c    <input ms-duplex="username"/>{{username}}
+    <div ms-widget="pager,c-controller_page" ></div>
+    <br/>
+
+    {{age}}
+    <select ms-duplex="age">
+        <option value="18">18岁</option>
+        <option value="19">19岁</option>
+        <option value="020">20岁</option>
+        <option value="21">21岁</option>
+    </select>
+
+    {{degree}}{{xuewei}}
+    <select ms-duplex ="degree">
+        <option value="1">学士</option>
+        <option value="2">硕士</option>
+        <option value="3">博士</option>
+    </select>
+</div>

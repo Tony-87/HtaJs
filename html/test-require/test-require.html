@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>require 加载顺序测试</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="../../js/require/require.js" ></script>
+        <script type="text/javascript">
+            require(['script1.js','script2.js'], function (main) {
+                //require([]);
+            });
+        </script>
+        <style>
+            .ms-controller{
+                visibility: hidden;
+            }
+        </style>
+            
+    </head>
+    <body ms-controller="root">
+    require 加载顺序测试
+    <br/>
+请看控制台输出
+
+    </body>
+</html>

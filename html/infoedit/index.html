@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板引用</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../../js/require/require.js" data-main="main.js"></script>
+    <style>
+        .ms-controller {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+<body ms-controller="root">
+<div>{{header | html}}</div>
+<div ms-include-src="page"></div>
+<div>{{footer}}</div>
+<br/>
+
+<div>
+    <div ms-repeat="data_list">
+        <span>{{el.id}}</span>
+        <br/>
+        <span>{{el.degree}}</span>
+        <br/>
+        <span>{{el.beginDate}}</span>
+        beginYear: {{el.beginYear}}-{{el.beginMonth}},
+        beginDate truncate {{el.beginDate|truncate(4,'')}}
+        <select ms-duplex="el.beginYear">
+            <option ms-repeat="year_list" ms-attr-value="el">{{el}}</option>
+
+        </select>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ms-validate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../../js/avalon.js"></script>
+    <script src="//cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+
+    <style>
+        .ani{
+            width:100px;
+            height:100px;
+            background: #29b6f6;
+        }
+    </style>
+    <script>
+        avalon.component('ms-button', {
+            template: '<button type="button"><span><slot name="buttonText"></slot></span></button>',
+            defaults: {
+                buttonText: "button"
+            },
+            soleSlot: 'buttonText'
+        })
+        avalon.effect('zoom', {
+            enter: function (el, done) {
+
+                $(el).css({width: 0, height: 0}).animate({
+                    width: 100, height: 100
+                }, 1000, done)
+            },
+            leave: function (el, done) {
+                $(el).animate({
+                    width: 0, height: 0
+                }, 1000, done)
+            }
+        })
+        var vm = avalon.define({
+            $id: "test",
+            arr: [1,2,3],
+            aaa: 222,
+            toggle: true
+        })
+
+
+    </script>
+</head>
+
+<body ms-controller="test" >
+<div ms-for="el in @arr">
+    <div class='ani'
+         ms-attr="{eee:el}"
+         ms-if="@toggle"
+         ms-widget='{is:"ms-button"}'
+         ms-effect="{is:'zoom'}">{{@aaa}}::{{el}}</div>
+</div>
+</body>
+</html>

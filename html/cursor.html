@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="../js/avalon/avalon-1.46.js"></script>-->
+    <script src="../js/avalon/avalon-2.10.js"></script>
+    <script>
+        function set_text_value_position(obj, spos){
+            var tobj = document.getElementById(obj);
+            if(spos<0)
+                spos = tobj.value.length;
+            if(tobj.setSelectionRange){ //兼容火狐,谷歌
+                setTimeout(function(){
+                         tobj.setSelectionRange(spos, spos);
+
+                            tobj.focus();}
+                        ,0);
+            }else if(tobj.createTextRange){ //兼容IE
+                var rng = tobj.createTextRange();
+                rng.move('character', spos);
+                rng.select();
+
+                console.log(rng);
+            }
+        }
+        function show_text_value_position(obj, spos){
+            var tobj = document.getElementById(obj);
+
+            if(tobj.setSelectionRange){ //兼容火狐,谷歌
+
+
+                setTimeout(function(){
+
+                            console.log(tobj.selectionStart);    // 2
+                            console.log(tobj.selectionEnd);      // 2
+                            tobj.focus();}
+                        ,0);
+            }else if(tobj.createTextRange){ //兼容IE
+            var rng = tobj.createTextRange();
+            rng.move('character', spos);
+                console.log(spos);
+                rng.moveStart('character',4)
+                //rng.moveEnd('character',spos)
+
+                rng.select();
+                console.log(rng.htmlText);
+                console.log(rng.text);
+                console.log(4455);
+
+            }
+        }
+
+        function setCursor() {
+            //调用演示
+            set_text_value_position('txtName', 2);  //设置到2
+            //set_text_value_position('areaName',2); //设置到开头
+        }
+        function showCursor() {
+            //调用演示
+            show_text_value_position('txtName', 2);  //设置到2
+            //show_text_value_position('areaName',2); //设置到开头
+        }
+        function setText() {
+            var tobj= document.getElementById("txtName");
+            var spos= tobj.selectionStart;
+            tobj.value="123456789";
+
+            console.log(spos);
+            setTimeout(function () {
+                tobj.setSelectionRange(spos, spos);
+                tobj.focus();
+            },0)
+
+
+            //document.getElementById("txtName").focus();
+
+
+
+
+
+
+        }
+    </script>
+    <script>
+        var vm = avalon.define({
+            $id: "test",
+            a: "一二三四五六七八九十"
+        })
+    </script>
+    <style>
+        .ms-controller{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div ms-controller="test">
+    <input id="txtName" ms-duplex="@a" />
+    <textarea id="areaName" ms-duplex="@a" ></textarea>
+    <p>{{@a}}</p>
+
+    <input type="button" onclick="showCursor()" value="显示光标位置"/>
+    <input type="button" onclick="setCursor()" value="设置光标位置"/>
+    <input type="button" onclick="setText()" value="设置内容"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>模板引用</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="../../js/require/require.js" data-main="main.js"></script>
+        <style>
+            .ms-controller{
+                visibility: hidden;
+            }
+        </style>
+            
+    </head>
+    <body ms-controller="root">
+        <div>{{header | html}}</div>
+        <div ms-include-src="page"></div>
+        <div>{{footer}}</div>
+        <br/>      <br/>
+        <div ms-include-src="page2" data-include-loaded="page2_load" ms-if="type==11"></div>
+        <div ms-include-src="page2" data-include-loaded="page2_load" ms-if="type==12"></div>
+        <div ms-include-src="page2" data-include-loaded="page2_load" ms-if="type==13"></div>
+        <div ms-include-src="page2" data-include-loaded="page2_load" ms-if="type==14"></div>
+        <br/>
+        <div ms-include-src="page3" data-include-loaded="page3_load"></div>
+        <br/>      <br/>
+        <div ms-include-src="moduleC1" data-include-rendered="modulec_render" ></div>
+        <br/>
+        <div ms-include-src="moduleC2"  ></div>
+        <br/>      <br/>
+        <div id="moduleD1" ms-if="type==11"></div>
+        <br/>
+        <div id="moduleD2" ms-if="type==12"></div>
+        <br/>
+        <div ms-if="type==13">{{moduleD3Str|html}}</div>
+
+    <input type="button" value="test" ms-click="test()" />
+    <input type="button" value="test11" ms-click="test(11)" />
+    <input type="button" value="test12" ms-click="test(12)" />
+    <input type="button" value="test13" ms-click="test(13)" />
+    {{type}}
+
+    </body>
+</html>

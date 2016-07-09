@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板引用</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../../js/require/require.js" data-main="main.js"></script>
+    <style>
+        .ms-controller {
+            visibility: hidden;
+        }
+
+        /*==========以下部分是Validform必须的===========*/
+        .Validform_checktip {
+            margin-left: 8px;
+            line-height: 20px;
+            height: 20px;
+            overflow: hidden;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .Validform_right {
+            color: #71b83d;
+            padding-left: 20px;
+            background: url(../images/right.png) no-repeat left center;
+        }
+
+        .Validform_wrong {
+            color: red;
+            padding-left: 20px;
+            white-space: nowrap;
+            background: url(../images/error.png) no-repeat left center;
+        }
+
+        .Validform_loading {
+            padding-left: 20px;
+            background: url(../images/onLoad.gif) no-repeat left center;
+        }
+
+        .Validform_error {
+            background-color: #ffe7e7;
+        }
+
+        #Validform_msg {
+            color: #7d8289;
+            font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+            width: 280px;
+            -webkit-box-shadow: 2px 2px 3px #aaa;
+            -moz-box-shadow: 2px 2px 3px #aaa;
+            background: #fff;
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            z-index: 99999;
+            display: none;
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+        }
+
+        #Validform_msg .iframe {
+            position: absolute;
+            left: 0px;
+            top: -1px;
+            z-index: -1;
+        }
+
+        #Validform_msg .Validform_title {
+            line-height: 25px;
+            height: 25px;
+            text-align: left;
+            font-weight: bold;
+            padding: 0 8px;
+            color: #fff;
+            position: relative;
+            background-color: #000;
+        }
+
+        #Validform_msg a.Validform_close:link, #Validform_msg a.Validform_close:visited {
+            line-height: 22px;
+            position: absolute;
+            right: 8px;
+            top: 0px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #Validform_msg a.Validform_close:hover {
+            color: #cc0;
+        }
+
+        #Validform_msg .Validform_info {
+            padding: 8px;
+            border: 1px solid #000;
+            border-top: none;
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+<body ms-controller="root">
+<div>
+
+    <form id="form1" method="post" action="/user/fomr1">
+        <h2>邮箱：</h2>
+        <input type="text" name="email" placeholder="请输入您的邮箱">
+        <h2>密码：</h2>
+        <input type="text" name="password" placeholder="请输入您的密码">
+        <input type="submit" class="submit"   value="submit">
+        <input type="button" class="submit" ms-click="submitForm($event)" value="button">
+    </form>
+
+    <form id="form2" method="post" action="/user/form2">
+
+
+        <h2>邮箱：</h2>
+        <input type="text" name="email" placeholder="请输入您的邮箱" datatype="*">
+        <h2>密码：</h2>
+        <input type="text" name="password" placeholder="请输入您的密码">
+
+        <input type="submit" class="submit" ms-click="submitForm($event)" value="立即登录">
+        <input id="btnSub" type="button" class="submit" ms-click="submitForm($event)" value="button登录">
+
+    </form>
+</div>
+</body>
+</html>

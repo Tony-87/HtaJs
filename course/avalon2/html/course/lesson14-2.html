@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ms-validate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../../js/avalon.js"></script>
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+
+    <style>
+        .ani{
+            width:100px;
+            height:100px;
+            background: #ff6e6e;
+        }
+        .wave-enter, .wave-leave {
+            -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+            -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+            -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+            transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+        }
+
+        .wave-enter {
+            position:absolute;
+            left:45%;
+        }
+
+        .wave-enter-active {
+            left:0;
+        }
+
+        .wave-leave {
+            position:absolute;
+            left:0;
+        }
+
+        .wave-leave-active {
+            left:45%;
+        }
+
+    </style>
+    <script>
+        avalon.effect('wave', {})
+        var vm = avalon.define({
+            $id: 'effect',
+            action: 'enter',
+            enterCb: function () {
+                avalon.log('动画完成')
+            },
+            leaveCb: function () {
+                avalon.log('动画回到原点')
+            }
+        })
+
+
+    </script>
+</head>
+
+<body>
+<div ms-controller='effect' >
+    <div class='ani' ms-effect="{is:'wave', action:@action,onEnterDone: @enterCb,onLeaveDone: @leaveCb}">
+        <button ms-click='@action = @action !== "leave" ? "leave": "enter"'
+                type="button">click</button>
+    </div>
+
+</div>
+</body>
+</html>

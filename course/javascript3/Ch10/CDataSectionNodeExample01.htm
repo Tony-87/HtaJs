@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CDataSection Node Example</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml" />
+</head>
+<body>
+    <div id="myDiv"><![CDATA[This is some content.]]></div>
+    <input type="button" value="Get CData Section" onclick="getCDataSection()" />
+    <p>Note that this example uses XHTML, since CData sections are not supported in HTML.</p>
+    <script type="text/javascript">
+        function getCDataSection(){
+        
+            var div = document.getElementById("myDiv");
+            var cdata = div.firstChild;
+            alert(cdata.nodeType);
+            alert(cdata.nodeValue);
+            
+        }
+
+    </script>
+	<center>
+  <div style="font-size:15px; font-weight:bold; text-align:center; line-height:25px;">
+     ???<a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>????(<a href="http://www.jq-school.com" target="_blank">http://www.jq-school.com</a>)?????QQ?<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f221dd676cd5f7f51f6b580ff8fe1bdd2fefe911ae0e1137a6f79c58d6e11ebf"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Jquery??QQ??" title="Jquery??QQ??"></a></div>
+</center>
+</body>
+</html>

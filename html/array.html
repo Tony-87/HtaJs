@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ms-for demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../js/avalon/avalon-1.46.js"></script>
+
+    <script>
+        var model = avalon.define({
+            $id: "root",
+            user_list: [{"id": 11, "name": "user1"}, {"id": 12, "name": "user2"}, {"id": 13, "name": "user3"}],
+            auth_list: [],
+            selectUser: function (el) {
+                if(el.select)
+                {
+                    el.select = false;
+                    model.auth_list.remove(el);
+                }
+                else
+                {
+                    el.select = true;
+                    model.auth_list.push(el);
+                }
+
+            },
+            loadComment: function (el) {
+                $("#comment_" + el.id).text("我是评论,属于ID:" + el.id);
+            }
+        })
+    </script>
+</head>
+<body ms-controller="root">
+<div>
+    <ul>
+        <li ms-repeat="user_list">{{el.id}}--{{el.name}}--{{el.select}}
+            <a href="javascript:void(0);" ms-click="selectUser(el)">√</a>
+        </li>
+    </ul>
+</div>
+<hr/>
+<div>
+    <ul>
+        <li ms-repeat="auth_list">{{el.id}}--{{el.name}}</li>
+    </ul>
+</div>
+</body>
+</html>

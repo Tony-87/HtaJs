@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../../js/avalon.js"></script>
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: "test",
+            title:111,
+            src: "222",
+            lang: 333,
+
+            a:"av",
+            b:5,
+            d:6,
+            e:7,
+            fn:function(a,b){
+                return a+b;
+            },
+            toggle:true,
+            attrObj:{a:1,b:2,c:3,d:4},
+            getAttr:function(){
+            console.log($(this).attr("name"));
+            }
+        })
+    </script>
+    <style>
+        .ms-controller {
+            display: none;
+        }
+        div{width:500px;height:50px; background: #FF9900;margin:10px;}
+    </style>
+</head>
+
+<body ms-controller="test" >
+
+<div  ms-attr-class="@a" ms-attr-id="@a" ms-attr-name="@a" ms-click="@getAttr()"> ms-attr-class="@a" </div>
+
+<div ms-attr="{aaa:@a, bbb:@b+11, ccc: @fn(@d,@e)}">ms-attr="{aaa:@a, bbb:@b+11, ccc: @fn(@d,@e)}"</div>
+
+<div ms-attr="@attrObj">ms-attr="@attrObj"</div>
+
+<div ms-attr="[{aaa:@a}, {bbb: @b}, @toggle ? {add:'111'}:{}]"></div>
+
+<div  aaa='ddd' bbb=333
+      ms-attr='{title: @title,
+                    ddd:@src,
+                    lang:@lang}' >{{
+    @src ? 333: 'empty'
+    }}</div>
+<input ms-duplex="@src"/>
+</body>
+
+</html>

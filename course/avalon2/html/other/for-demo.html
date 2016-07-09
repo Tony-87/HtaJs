@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ms-for demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../../js/avalon.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var model = avalon.define({
+            $id: "root",
+            data_list: [{"id": 11, "title": "微博一"}, {"id": 12, "title": "微博二"}],
+            fill_keji: function () {
+                //模拟ajax加载数据，并给VM赋值
+                model.data_list = []
+                model.data_list = [{"id": 21, "title": "科技一"}, {"id": 22, "title": "科技二"}, {"id": 23, "title": "科技三"}]
+            },
+            fill_caijing: function () {
+                model.data_list = []
+                model.data_list = [{"id": 31, "title": "财经一"}, {"id": 32, "title": "财经二"},
+                    {"id": 33, "title": "财经三"}, {"id": 34, "title": "财经四"}]
+            },
+            loadComment: function (el) {
+                $("#comment_" + el.id).text("我是评论,属于ID:" + el.id);
+            }
+        })
+    </script>
+</head>
+<body ms-controller="root">
+<div>
+    微博类型
+    <input type="button" value="科技" ms-click="@fill_keji()"/>
+    <input type="button" value="财经" ms-click="@fill_caijing()"/>
+</div>
+<br/>
+<div ms-for="el in @data_list">
+    <div style="border:solid 1px #666;margin-top: 30px;">
+        <div>ID:{{el.id}},标题: {{el.title}}</div>
+        <br/>
+        <div>
+            <input type="button" value="加载评论" ms-click="@loadComment(el)"/>
+            <span ms-attr="{id:'comment_'+el.id}">{{el.id}}</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

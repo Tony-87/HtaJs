@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>模板引用</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="../../js/require/require.js" data-main="main.js"></script>
+        <style>
+            .ms-controller{
+                visibility: hidden;
+            }
+        </style>
+            
+    </head>
+    <body ms-controller="root">
+        <div>{{header | html}}</div>
+        <div ms-include-src="page"></div>
+        <div>{{footer}}</div>
+        <br/>      <br/>
+        <div ms-include-src="page2" data-include-loaded="page2_load"></div>
+        <br/>
+        <div ms-include-src="page3" data-include-loaded="page3_load"></div>
+        <br/>      <br/>
+        <div ms-include-src="moduleC1" data-include-rendered="modulec_render" ></div>
+        <br/>
+        <div ms-include-src="moduleC2"  ></div>
+        <br/>      <br/>
+        <div id="moduleD1"></div>
+        <br/>
+        <div id="moduleD2"></div>
+        <br/>
+
+        <div >{{moduleD3Str|html}}</div>
+
+    </body>
+</html>

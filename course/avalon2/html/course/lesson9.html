@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../../js/avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: "test",
+            array: ["aaa","bbb","ccc"]
+        })
+        setTimeout(function(){
+            vm.array = ['ccc','dd1','dd2','dd3']
+        },3000)
+
+    </script>
+    <style>
+        .ms-controller {
+            display: none;
+        }
+    </style>
+</head>
+
+<body ms-controller="test">
+<ul>
+    <li ms-for="($index, el) in @array">{{el}} --- {{$index}}</li>
+</ul>
+</body>
+
+</html>

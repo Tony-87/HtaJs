@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板引用</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../../js/require/require.js" data-main="main.js"></script>
+    <style>
+        .ms-controller {
+            visibility: hidden;
+        }
+        .thesis{margin-top:20px;}
+        .question{margin-top:20px;}
+    </style>
+
+</head>
+<body ms-controller="root">
+<div>
+    <input type="button" value="填充数据1" ms-click="@fill_data1()"/>
+    <input type="button" value="填充数据2" ms-click="@fill_data2()"/>
+    <br/>
+    {{@a}}
+</div>
+<div ms-for="el in @data_list">
+
+    <div class="thesis" ms-if="el.type==12||el.type==13">
+        <div>动态:{{el.id}},论文:{{el.dynamicData.id}}--{{el.dynamicData.title}}</div>
+        <div style="border:solid 1px #F00">
+            <input type="button" value="加载评论" ms-click="@commentThesis(el)"/>
+            <div ms-attr="{id:'comment_'+el.id}">{{el.id}}</div>
+        </div>
+    </div>
+
+
+    <div class="question" ms-if="el.type==22||el.type==23">
+        <div>动态:{{el.id}},问题:{{el.dynamicData.id}}--{{el.dynamicData.title}}</div>
+        <div style="border:solid 1px #F0F">
+            <input type="button" value="加载评论" ms-click="@commentQuestion(el)"/>
+            <div ms-attr="{id:'comment_'+el.id}">{{el.id}}</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
