@@ -15,6 +15,7 @@
         |-lesson1.html
     |-avalon1.4
     |-javascript3
+	|-require
 |-images        图片
 |-css           样式
 |-js            js文件
