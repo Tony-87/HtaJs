@@ -16,6 +16,7 @@
     |-avalon1.4
     |-javascript3
 	|-require
+	|-angular1
 |-images        图片
 |-css           样式
 |-js            js文件
