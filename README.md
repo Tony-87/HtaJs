@@ -17,6 +17,8 @@
     |-javascript3
 	|-require
 	|-angular1
+    |-angular2
+    |-mongoDB
 |-images        图片
 |-css           样式
 |-js            js文件
