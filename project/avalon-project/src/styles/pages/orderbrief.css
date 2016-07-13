@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+.m-orderbrief .memo-content .memo-left { float: left; width: 46% }
+.m-orderbrief .memo-content .memo-right { float: right; width: 46% }

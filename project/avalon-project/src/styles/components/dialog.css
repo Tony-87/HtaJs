@@ -1,0 +1,27 @@
+.qta-notice { position: absolute; right: 20px; bottom: 0px; height: 200px; background: #fff; z-index: 900; }
+.qta-notice h3 { margin: 5px 16px; font-weight: normal; }
+.qta-notice h3 a { margin-left: 15px; }
+.qta-notice table { width: 450px; margin-left: 16px; }
+.qta-notice tr { height: 25px; }
+.qta-notice .notice-new { margin-left: 5px; }
+.qta-notice .notice-close { position: absolute; top: 2px; right: 2px; width: 44px; height: 20px; background: url(http://source.qunarzz.com/hotel/ebooking/hotel_rank/dc_sprite_8.png) 0 -269px no-repeat; cursor: pointer; }
+.qta-notice .notice-body { width: 480px; height: 200px; border: solid 3px #0088e7; border-bottom: 0; }
+.qta-notice .notice-open { position: absolute; bottom: 17px; right: 0; width: 82px; height: 26px; background: url(http://source.qunarzz.com/hotel/ebooking/hotel_rank/dc_sprite_8.png) 0 -302px no-repeat; cursor: pointer; display: none; }
+.qta-notice .f20 { font-size: 20px }
+.qta-notice a { color: #0069ca; text-decoration: none; }
+.qta-notice .f12 { font-size: 12px; }
+.qta-notice .more { text-align: right; margin: 5px 10px 0 0; }
+.qta-notice .notice-lsit .ui-smartgrid { border: none; }
+.notice-list .readable { font-weight: bold; }
+
+
+/* 弹窗多列信息展示 依赖常规m-form相关样式 */
+.qta-dialog-muli-col .m-form{margin-bottom: 0; border-bottom: none;}
+.qta-dialog-muli-col .m-form .col-6{width:49%; display: inline-block;}
+.qta-dialog-muli-col .m-form .col-1{width:8%; display: inline-block;}
+.qta-dialog-muli-col .m-form .col-11{width:91%; display: inline-block;}
+.qta-dialog-muli-col .m-form .header{border-bottom: 1px solid #f2f2f2; padding: 0; margin-top: 0;}
+.qta-dialog-muli-col .m-form .row{padding: 0;}
+.qta-dialog-muli-col .m-form .row .title{margin-left: 0; width: 80px; padding-right:0;}
+.qta-dialog-muli-col .m-form .row .lable{display: inline-block; vertical-align: middle;}
+.qta-dialog-muli-col .m-form .block{margin-bottom: 10px; border-bottom: none; margin-top: 10px;}

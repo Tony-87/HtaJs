@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+.ui-tab {
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.ui-tab-left {
+    @include float(left);
+}
+
+.ui-tab-right {
+    @include float(right);
+}
+
+.ui-tab-set {
+    @include inline-block();
+    margin-bottom: -1px;
+    padding-left: 1px;
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.ui-tab-item {
+    @include float(left);
+    border: 1px solid #ccc;
+    margin-left: -1px;
+}
+
+.ui-tab-handler {
+    @include float(left);
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    padding: 7px 20px;
+
+    &:hover {
+        background-color: #fff;
+        color: #333;
+    }
+}
+
+.ui-tab-active {
+    .ui-tab-handler {
+        background-color: #fff;
+        cursor: default;
+        margin-bottom: -1px;
+        padding-bottom: 8px;
+        position: relative;
+    }
+}
+
+.ui-tab-mini {
+    @include inline-block();
+    border-bottom: 0 none;
+    padding: 0;
+
+    .ui-tab-list {
+        margin-bottom: 0;
+    }
+
+    .ui-tab-handler {
+        padding: 3px 10px;
+    }
+
+    .ui-tab-active {
+        @include box-shadow(2px, 2px, 3px, 0, 10%);
+        border-color: #3775c0;
+        position: relative;
+
+        .ui-tab-handler {
+            margin-bottom: 0;
+            padding-bottom: 3px;
+        }
+    }
+}
+
+.l-workspace-topbar {
+    .ui-tab {
+        margin-bottom: -20px;
+        padding: 0;
+    }
+}

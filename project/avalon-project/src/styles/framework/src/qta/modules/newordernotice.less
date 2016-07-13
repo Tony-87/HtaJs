@@ -1,0 +1,85 @@
+.m-newordernotice {
+    .box-shadow(2px 2px 3px, 10%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 0 none;
+    bottom: 0;
+    position: absolute;
+    right: 24px;
+    width: 178px;
+    display: none;
+
+    .header {
+        padding: 6px 8px 6px 10px;
+        cursor: pointer;
+
+        .ops {
+            .float-right();
+
+            .ui-icon {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .content {
+        padding: 2px 10px 7px;
+    }
+
+    .item {
+        .float-left();
+        width: 100%;
+    }
+
+    .handler {
+        color: #333;
+        display: block;
+        padding: 3px 4px;
+
+        &:hover {
+            background-color: #fef0a1;
+            color: #333;
+        }
+
+        .num {
+            .inline-block();
+            background-color: #58b359;
+            border-radius: 2px;
+            color: #fff;
+            font-weight: 700;
+            line-height: 17px;
+            margin-top: ~"2px\9\0";
+            padding: 0 5px;
+            text-align: center;
+        }
+
+        .num2 {
+            background-color: #ff7e00;
+        }
+
+        .num3 {
+            background-color: #f55;
+        }
+
+        .text {
+            line-height: 17px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.m-newordernotice-none .header .title {
+    color: #999;
+}
+
+.m-newordernotice-blink .header .title {
+    font-weight: 700;
+}
+.m-newordernotice-blink2 .header .title {
+    color: #f60;
+    font-weight: 700;
+}
+
+.m-newordernotice-open .header .title {
+    font-weight: 700;
+}

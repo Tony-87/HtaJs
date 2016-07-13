@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.ui-notice {
+    background-color: #ffe44f;
+    color: #a65a00;
+    display: none;
+    font-size: 12px;
+    width: 100%;
+    *zoom: 1;
+}
+
+.ui-notice-inner {
+    padding: 7px 10px;
+}
+
+.ui-notice-header {
+    font-weight: 700;
+}
+
+.ui-notice-content {
+    a,
+    a:hover {
+        color: #a65a00;
+        text-decoration: underline;
+    }
+}
+
+.ui-notice-close {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ui-notice-info {
+    background-color: #58b359;
+    color: #fff;
+
+    .ui-notice-content {
+        a,
+        a:hover {
+            color: #fff;
+        }
+    }
+}
+
+.ui-notice-danger {
+    background-color: #b00;
+    color: #fff;
+
+    .ui-notice-content {
+        a,
+        a:hover {
+            color: #fff;
+        }
+    }
+}
+
+.ui-notice-flow {
+    margin-bottom: 10px;
+}
+
+.ui-notice-detach {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+
+    .ui-notice {
+        position: absolute;
+    }
+}

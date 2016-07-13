@@ -1,0 +1,3 @@
+<div class="contactLog">
+	<p>通话次数：{{contactTimes}}</p>
+</div>

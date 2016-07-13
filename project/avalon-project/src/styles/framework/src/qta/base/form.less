@@ -1,0 +1,32 @@
+.checkbox,
+.radiobox {
+    height: 13px;
+    _position: relative;
+    vertical-align: middle;
+    vertical-align: ~"-2px\0";
+    width: 13px;
+}
+
+select {
+    vertical-align: middle;
+}
+
+label {
+    .inline-block();
+    cursor: pointer;
+
+    .checkbox,
+    .radiobox {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        color: #ddd;
+        cursor: default;
+
+        .checkbox,
+        .radiobox {
+            cursor: default;
+        }
+    }
+}

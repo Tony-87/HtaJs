@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="l-viewport">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=1" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.2, user-scalable=1" media="(device-height:568px)" />
+<title>QTA</title>
+<link rel="stylesheet" href="http://qunarzz.com/hotel_qta/prd/styles/pages/common.css" media="screen" />
+</head>
+<body>
+<div class="l-header m-header">
+    <div class="logo">QTA</div>
+    <div class="nav">
+        <ul class="link">
+            <li><a href="javascript:void(0);">username</a></li>
+            <li><a href="javascript:void(0);">退出登录</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="javascript:void(0);" class="active">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+        </ul>
+    </div>
+</div>
+<div class="l-container-wrap">
+    <div class="l-container">
+        <div class="l-sidebar m-sidebar">
+            $sidebar$
+        </div>
+        <div class="l-main-wrap">
+            <div class="l-main">
+                <div class="m-workspace">
+                    <!--m:crumb-->
+                    <div class="ui-crumb m-crumb">
+                        <a href="javascript:void(0);" class="ui-crumb-back"><i class="ui-icon ui-icon-arrow-left">&#xf060;</i> 返回</a>
+                        <div class="ui-crumb-set">
+                            <div class="ui-crumb-set-inner">
+                                <a href="javascript:void(0);" class="ui-crumb-item">供应商管理</a>
+                                <span class="ui-crumb-divider"><em></em></span>
+                                <span class="ui-crumb-item">新建供应商</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/m:crumb-->
+                    <!--m:form-->
+                    <div class="m-form">
+                        <div class="block">
+                            <div class="header">
+                                <h3 class="title">基本信息</h3>
+                            </div>
+                            <div class="row">
+                                <div class="title">供应商名称</div>
+                                <div class="ui-textbox">
+                                    <div class="ui-textbox-input-wrap">
+                                        <input type="text" class="ui-textbox-input w200" />
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);">校验</a>
+                            </div>
+                            <div class="row">
+                                <div class="title">实体类型</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 单体酒店</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 集团酒店</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> OTA酒店</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">是否直供</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 是</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 否</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">供应商状态</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 启用</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 禁用</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <h3 class="title">联系信息</h3>
+                            </div>
+                            <div class="row">
+                                <div class="title">联系方式</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">电话</span>
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>前台电话</option>
+                                            </select>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">备注</span>
+                                                    <input type="text" class="ui-textbox-input w200" />
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">电话</span>
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>前台电话</option>
+                                            </select>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">备注</span>
+                                                    <input type="text" class="ui-textbox-input w200" />
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加联系方式</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">传真号码</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">传真号码</span>
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>前台传真</option>
+                                            </select>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">备注</span>
+                                                    <input type="text" class="ui-textbox-input w200" />
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加传真号码</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">签约经理</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>普通业务</option>
+                                            </select>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>普通业务</option>
+                                            </select>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加签约经理</a>
+                            </div>
+                            <div class="row">
+                                <div class="title">签约助理</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>普通业务</option>
+                                            </select>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <select>
+                                                <option>普通业务</option>
+                                            </select>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加签约助理</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <h3 class="title">订单配置信息</h3>
+                            </div>
+                            <div class="row">
+                                <div class="title">订单确认方式</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">eBooking确认（默认方式），还可增加以下确认方式：</div>
+                                        <div class="unit">
+                                            <select>
+                                                <option>短信确认</option>
+                                                <option>电话确认</option>
+                                                <option>传真确认</option>
+                                            </select>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">请输入号码</span>
+                                                    <input type="text" class="ui-textbox-input w200" />
+                                                </div>
+                                            </div>
+                                            <div class="ui-dropdown" style="width:70px">
+                                                <div class="ui-dropdown-source">
+                                                    <div class="ui-dropdown-input"><i class="g-icon-start ui-icon ui-icon-circle">&#xf111;</i> 有效</div>
+                                                    <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                </div>
+                                                <div class="ui-dropdown-menu-wrap">
+                                                    <div class="ui-dropdown-menu" style="display:none;width:70px"></div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                        <div class="unit">
+                                            <select>
+                                                <option>短信确认</option>
+                                                <option>电话确认</option>
+                                                <option>传真确认</option>
+                                            </select>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <span class="ui-textbox-placeholder">请输入号码</span>
+                                                    <input type="text" class="ui-textbox-input w200" />
+                                                </div>
+                                            </div>
+                                            <div class="ui-dropdown" style="width:70px">
+                                                <div class="ui-dropdown-source">
+                                                    <div class="ui-dropdown-input"><i class="g-icon-start ui-icon ui-icon-circle">&#xf111;</i> 有效</div>
+                                                    <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                </div>
+                                                <div class="ui-dropdown-menu-wrap">
+                                                    <div class="ui-dropdown-menu" style="display:none;width:70px"></div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">短信发送时间</div>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                                <span class="label">至</span>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="title">订单审核方式</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 日审</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 夜审</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">预订渠道</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 网页</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 无线</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> HDS</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">佣金类型</div>
+                                <div class="set">
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 间夜</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 订单费</label></li>
+                                    </ul>
+                                    <div class="optional">
+                                        <div>
+                                            <span class="label">订单费计费模式</span>
+                                            <ul class="m-list">
+                                                <li class="item"><label><input type="radio" class="radiobox" /> 底价</label></li>
+                                                <li class="item"><label><input type="radio" class="radiobox" /> 卖价</label></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <span class="label">订单费结算方式</span>
+                                            <ul class="m-list">
+                                                <li class="item"><label><input type="radio" class="radiobox" /> 先付费</label></li>
+                                                <li class="item"><label><input type="radio" class="radiobox" /> 后付费</label></li>
+                                            </ul>
+                                        </div>
+                                        <div>注意：订单费计费选择后，不可更改！<a href="javascript:void(0);">查看订单费详情</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <h3 class="title">服务时间设置</h3>
+                            </div>
+                            <div class="row">
+                                <div class="title">服务时间</div>
+                                <div class="inline">无特殊规则下，不限日期，时段执行以下时段</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">订单确认时间段</div>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                                <span class="label">至</span>
+                                <select>
+                                    <option>当日</option>
+                                </select>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                                <label><input type="checkbox" class="checkbox" /> 过时可确认当日订单</label>
+                            </div>
+                            <div class="row">
+                                <div class="title">客人到店时间段</div>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                                <span class="label">至</span>
+                                <select>
+                                    <option>当日</option>
+                                </select>
+                                <select>
+                                    <option>18</option>
+                                </select>
+                                <span class="label">:</span>
+                                <select>
+                                    <option>00</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <h5>以下日期执行此设置</h5>
+                                <!--m:grid-->
+                                <div class="ui-grid">
+                                    <div class="ui-grid-header">
+                                        <div class="ui-grid-header-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>生效日期</th>
+                                                        <th>有效星期</th>
+                                                        <th>时间段设置</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-content">
+                                        <div class="ui-grid-content-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2013-12-12 ~ 2014-01-06</td>
+                                                        <td>1/2/3/4/5/6/7</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>订单确认：18:00-23:00 <span class="g-color-memo">(过时可确认当日订单)</span></li>
+                                                                <li>客人到店：18:00-次日7:00</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="ops-modify"><i class="ui-icon ui-icon-pencil-square-o">&#xf044;</i></a>
+                                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/m:grid-->
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加含日期的服务时间设置</a>
+                            </div>
+                        </div>
+                        <div class="block block-collapsed block-expanded">
+                            <div class="header header-trigger">
+                                <h3 class="title"><span class="trigger-icon"><i class="ui-icon ui-icon-caret-right">&#xf0da;</i><i class="ui-icon ui-icon-caret-down">&#xf0d7;</i></span> 高级设置</h3>
+                            </div>
+                            <div class="container">
+                                <!--
+                                <div class="row">
+                                    <div class="title">结算开放给酒店</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 是</label></li>
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 否</label></li>
+                                    </ul>
+                                </div>
+                                -->
+                                <div class="row">
+                                    <div class="title">货币结算单位</div>
+                                    <select>
+                                        <option>人民币 (RMB)</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="title">接口类型</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 手动录入</label></li>
+                                        <li class="item"><label><input type="radio" class="radiobox" /> API接口</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">Ebooking子帐号数</div>
+                                    <div class="ui-textbox">
+                                        <div class="ui-textbox-input-wrap">
+                                            <input type="text" class="ui-textbox-input w40" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="btns">
+                                <button class="ui-btn ui-btn-primary ui-btn-large">确认并保存</button>
+                                <button class="ui-btn ui-btn-large">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/m:form-->
+                </div>
+                <div class="m-footer">
+                    <div class="copyright">&copy; 2014 Qunar.com. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--m:dialog-->
+<div class="ui-dialog" style="display:block;position:absolute;width:600px;z-index:2000;">
+    <div class="ui-dialog-inner">
+        <div class="ui-dialog-header">
+            <div class="ui-dialog-close"><i class="ui-icon ui-icon-times">&#xf00d;</i></div>
+            <div class="ui-dialog-title">设置服务时间</div>
+        </div>
+        <div class="ui-dialog-content">
+            <!--m:form-->
+            <div class="m-form">
+                <div class="row">
+                    <div class="title">生效日期</div>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                    <span class="label"> - </span>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">有效星期</div>
+                    <ul class="m-list">
+                        <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周一</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周二</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周三</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周四</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周五</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周六</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周日</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">订单确认时间段</div>
+                    <select>
+                        <option>18</option>
+                    </select>
+                    <span class="label">:</span>
+                    <select>
+                        <option>00</option>
+                    </select>
+                    <span class="label">至</span>
+                    <select>
+                        <option>18</option>
+                    </select>
+                    <span class="label">:</span>
+                    <select>
+                        <option>00</option>
+                    </select>
+                    <label><input type="checkbox" class="checkbox" /> 过时可确认当日订单</label>
+                </div>
+                <div class="row">
+                    <div class="title">客人到店时间段</div>
+                    <select>
+                        <option>18</option>
+                    </select>
+                    <span class="label">:</span>
+                    <select>
+                        <option>00</option>
+                    </select>
+                    <span class="label">至</span>
+                    <select>
+                        <option>当日</option>
+                    </select>
+                    <select>
+                        <option>18</option>
+                    </select>
+                    <span class="label">:</span>
+                    <select>
+                        <option>00</option>
+                    </select>
+                </div>
+            </div>
+            <!--/m:form-->
+        </div>
+        <div class="ui-dialog-footer clrfix">
+            <div class="ui-dialog-btns">
+                <button class="ui-btn ui-btn-primary">确定</button>
+                <button class="ui-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/m:dialog-->
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.l-workspace {
+    min-width: 960px;
+    padding: 20px;
+    _width: #{"expression(this.parentNode.offsetWidth < 1000 ? '960px' : 'auto')"};
+    *zoom: 1;
+}
+
+.l-workspace-topbar {
+    background-color: #fafbfb;
+    background: -moz-linear-gradient(#fff, #f7f9fa);
+    background: -ms-linear-gradient(#fff, #f7f9fa);
+    background: -webkit-linear-gradient(#fff, #f7f9fa);
+    background: linear-gradient(#fff, #f7f9fa);
+    border-bottom: 1px solid #c1d1dc;
+    margin: -20px -20px 20px;
+    padding: 20px;
+    *zoom: 1;
+}
+
+.l-workspace-topbar-nobg {
+    background: #fff none;
+}

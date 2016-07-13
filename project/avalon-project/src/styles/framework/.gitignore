@@ -1,0 +1,14 @@
+# system ignore
+.DS_Store
+Thumbs.db
+tmp
+
+# node modules ignore
+node_modules
+npm-debug.log
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws

@@ -1,0 +1,3 @@
+<div class="rightInfo">
+	<p>权限等级：{{rightLv}}</p>
+</div>

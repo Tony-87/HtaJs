@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.m-subgrid {
+    margin: -8px -6px -7px;
+
+    .m-bizicon i {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        overflow: hidden;
+        vertical-align: middle;
+        background: url(http://simg1.qunarzz.com/hotel/qta/biz_type_v3.png) -20px 0px no-repeat;
+        cursor: default;
+    }
+}

@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+.m-form {
+    margin-bottom: 20px;
+
+    .block {
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+
+    .header {
+        padding: 20px 0;
+        margin-top: -20px;
+
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+
+            .note {
+                font-size: 12px;
+                font-weight: 400;
+                margin-left: 20px;
+            }
+        }
+
+        .trigger-icon {
+            display: none;
+
+            .ui-icon {
+                display: none;
+            }
+        }
+    }
+
+    .header-trigger {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e8f5fd;
+            color: #3775c0;
+        }
+
+        .trigger-icon {
+            display: inline;
+            margin-left: 5px;
+        }
+    }
+
+    .block-collapsed {
+        padding-bottom: 0;
+
+        .container {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .trigger-icon {
+            .ui-icon-caret-right {
+                display: inline;
+            }
+        }
+    }
+
+    .block-expanded {
+        .container {
+            height: auto;
+            overflow: visible;
+        }
+
+        .trigger-icon {
+            .ui-icon-caret-down {
+                display: inline;
+            }
+        }
+    }
+
+    .block-last {
+        border-bottom: 0 none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .row {
+        margin-bottom: 5px;
+        padding: 5px 10px 5px 135px;
+
+        .title {
+            @include inline-block();
+            text-align: right;
+            margin-left: -135px;
+            padding-right: 11px;
+            width: 120px;
+
+            .req {
+                color: #f55;
+            }
+        }
+
+        h5 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .set {
+            @include inline-block();
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .units {}
+
+        .unit {
+            margin-bottom: 5px;
+        }
+
+        .multi {
+            @include inline-block();
+            _height: 60px;
+            max-height: 60px;
+            overflow: hidden;
+            overflow-y: auto;
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .optional {
+            background-color: #e8f5fd;
+            padding: 7px 10px;
+
+            .m-form {
+                margin-bottom: 0;
+            }
+
+            .row {
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    .row-error {
+        background-color: #fee;
+        border: 1px dashed #f99;
+        padding: 4px 9px 4px 134px;
+    }
+
+    .footer {
+        padding-top: 10px;
+
+        .btns {
+            font-size: 0;
+
+            .ui-btn {
+                margin-right: 10px;
+            }
+        }
+    }
+}

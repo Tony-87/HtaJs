@@ -1,0 +1,105 @@
+.m-orderlist {
+    margin-top: 10px;
+    .header {
+        margin: 20px 0 0 0;
+        background-color: #d9534f;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+
+    .orderitem {
+        margin-bottom: 10px;
+
+        table {
+            border: 1px solid #e5e5e5;
+            table-layout: auto;
+            width: 100%;
+        }
+
+        tr.more_urgent {
+            // background-color: #f2dede;
+            color: #d9534f;
+
+            a {
+                color: #d9534f;
+            }
+        }
+
+        tr.urgent {
+            color: #0f9109;
+
+            a {
+                color: #0f9109;
+            }
+            // background-color: #dff0d8;
+        }
+
+        tr.row1 {
+            background-color: #f8f8f8;
+
+            .status {
+                display: none;
+            }
+        }
+
+        tr.receivedFax {
+            background-color: #ffa500;
+
+            .status {
+                color: #093;
+                display: inline;
+                font-weight: bold;
+                padding: 0 10px;
+            }
+        }
+
+        tr.calling {
+            background-color: #c6e2c6;
+
+            .status {
+                color: #093;
+                display: inline;
+                font-weight: bold;
+                padding: 0 10px;
+            }
+        }
+
+        tr.called {
+            background-color: #fcf8e3;
+
+            .status {
+                color: #8a6d3b;
+                display: inline;
+                font-weight: bold;
+                padding: 0 10px;
+            }
+        }
+
+        tr.canceled {
+            background-color: #d9534f;
+            color: #FFFFFF;
+        }
+
+        td {
+            border: 1px solid #e5e5e5;
+            padding: 7px 5px;
+        }
+
+        td.urgent {
+            background-color: #ffc9ca;
+        }
+
+        .more {
+            border-bottom: 1px dotted #333;
+            cursor: help;
+        }
+    }
+
+    .footer {
+        .ui-pager {
+            .float-right();
+        }
+    }
+}

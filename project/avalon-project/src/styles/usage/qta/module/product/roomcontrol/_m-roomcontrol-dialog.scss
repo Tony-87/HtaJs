@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.m-roomcontrol-dialog {
+    .infobar {
+        margin-top: -8px;
+    }
+
+    em.num {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .panel {
+        border-left: 200px solid #f8f8f8;
+    }
+
+    .panel-sidebar {
+        @include float(left);
+        margin-left: -200px;
+        padding: 7px 10px;
+        _position: relative;
+        width: 180px;
+
+        .header {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 7px;
+            padding-bottom: 7px;
+
+            .active,
+            .active:hover {
+                color: #333;
+                cursor: default;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .panel-main {
+        @include float(right);
+        width: 648px;
+
+        .header {
+            margin-bottom: 20px;
+        }
+    }
+}

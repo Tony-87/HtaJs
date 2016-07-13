@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.g-left {
+    @include float(left);
+}
+
+.g-right {
+    @include float(right);
+}
+
+.g-inline {
+    @include inline-block();
+}
+
+.g-rmb {
+    font-family: arial, sans-serif;
+}

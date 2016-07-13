@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.m-datenav {
+    @include inline-block();
+    font-size: 0;
+
+    .datepicker {
+        @include inline-block();
+        margin: 0 5px;
+    }
+}

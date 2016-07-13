@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@mixin float($side: left) {
+    display: inline;
+    float: unquote($side);
+}
+
+@mixin float-left {
+    @include float(left);
+}
+
+@mixin float-right {
+    @include float(right);
+}

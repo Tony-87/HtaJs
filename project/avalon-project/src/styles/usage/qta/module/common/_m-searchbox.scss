@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.m-searchbox {
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .form {
+        @include float(left);
+        margin-bottom: -10px;
+
+        .l-toolbar {
+            margin-bottom: 10px;
+        }
+    }
+
+    .ops {
+        @include float(left);
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+.m-softphone {
+    margin: -20px -20px 10px;
+
+    .inner {
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        font-size: 0;
+    }
+
+    .group {
+        .inline-block();
+        border-left: 1px solid #ccc;
+        margin-left: 10px;
+        _border-left: ~"expression(this.previousSibling == null ? '0 none' : '1px solid #ccc')";
+        _margin-left: ~"expression(this.previousSibling == null ? '-10px' : '10px')";
+
+        &:first-child {
+            border-left: 0 none;
+            margin-left: -10px;
+        }
+    }
+
+    .cell {
+        .inline-block();
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .status {
+        .inline-block();
+        background: url(http://source.qunar.com/hotel/qta/softphone_status.png) 0 -68px no-repeat;
+        height: 32px;
+        vertical-align: middle;
+        width: 32px;
+    }
+
+    .status-online {
+        background-position: 0 0;
+    }
+
+    .status-offline {
+        background-position: 0 -34px;
+    }
+}

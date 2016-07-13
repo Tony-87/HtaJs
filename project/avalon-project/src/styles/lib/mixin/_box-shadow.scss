@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@mixin box-shadow($hoff: null, $voff: null, $blur: null, $spread: null, $value: .5) {
+    @if quote($hoff) == "none" {
+        box-shadow: none;
+    } @else {
+        @if type-of($value) == "color" {
+            box-shadow: $hoff $voff $blur $spread $value;
+        } @else if type-of($value) == "number" {
+            @if unit($value) == "%" {
+                box-shadow: $hoff $voff $blur $spread rgba(0, 0, 0, $value / 100%);
+            } @else {
+                box-shadow: $hoff $voff $blur $spread rgba(0, 0, 0, $value / 1.0);
+            }
+        }
+    }
+}

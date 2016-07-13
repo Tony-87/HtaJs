@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.ui-grid {
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+
+    table {
+        table-layout: auto;
+        width: 100%;
+    }
+
+    th {
+        @include user-select(none);
+        padding: 7px 5px;
+    }
+
+    td {
+        border-bottom: 1px solid #f3f3f3;
+        padding: 7px 5px;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}
+
+.ui-grid-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui-grid-header-inner {
+    overflow: hidden;
+}
+
+.ui-grid-content {}
+
+.ui-grid-footer {
+    background-color: #f8f8f8;
+    font-size: 0;
+    padding: 5px;
+}
+
+.ui-grid-alt {}
+
+.ui-grid-hover {
+    background-color: #e8f5fd;
+}
+
+.ui-grid-selected {
+    background-color: #fff7e6;
+}
+
+.ui-grid-select {
+    cursor: pointer;
+}
+
+.ui-grid-type-text {}
+
+.ui-grid-type-control {}
+
+.ui-grid-type-number {
+    text-align: right;
+}
+
+.ui-grid-align-center {
+    text-align: center;
+}
+
+.ui-grid-type-sortable {
+    cursor: pointer;
+}
+
+.ui-grid-sorter {
+    margin-left: 5px;
+    padding-right: 7px;
+    position: relative;
+    top: -1px;
+
+    .ui-grid-sort-up,
+    .ui-grid-sort-down {
+        color: #d3d3d3;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.ui-grid-sort-asc .ui-grid-sort-up {
+    color: #555;
+}
+
+.ui-grid-sort-desc .ui-grid-sort-down {
+    color: #555;
+}
+
+.ui-grid-loader-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.ui-grid-loader-mask {
+    background-color: #fff;
+    filter: alpha(opacity=80);
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.ui-grid-loader {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+.ui-grid-loader-text {
+    @include inline-block();
+    @include box-shadow(2px, 2px, 3px, 0, 10%);
+    background-color: #ffe44f;
+    border: 1px solid #ffc600;
+    padding: 5px 10px;
+}
+
+.ui-grid-nodata {
+    padding: 27px 0;
+    text-align: center;
+}
+
+.ui-grid-pagesize-ops {
+    @include inline-block();
+
+    .ui-dropdown {
+        margin: 0 5px;
+    }
+}
+
+.ui-grid-pagesize-text {
+    @include inline-block();
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.ui-grid-pagebar {
+    @include float(right);
+}
+
+.ui-gridcolumns {
+    @include inline-block();
+    @include box-shadow(2px, 2px, 3px, 0, 10%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    width: 288px;
+}
+
+.ui-grid-status-disabled {
+    color: #ccc;
+}

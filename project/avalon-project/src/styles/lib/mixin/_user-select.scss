@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@mixin user-select($select) {
+    $select: unquote($select);
+    -moz-user-select: $select;
+    -ms-user-select: $select;
+    -webkit-user-select: $select;
+    user-select: $select;
+}

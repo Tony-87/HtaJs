@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.m-header {
+    background-color: #3775c0;
+    height: 50px;
+
+    .logo {
+        color: #fff;
+        font-size: 24px;
+        height: 50px;
+        left: 0;
+        line-height: 50px;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 200px;
+    }
+
+    .nav {
+        margin-left: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .link {
+        font-size: 0;
+        height: 18px;
+        padding: 2px 10px 2px 0;
+        text-align: right;
+        white-space: nowrap;
+
+        li {
+            @include inline-block();
+            color: #fff;
+            font-size: 12px;
+            padding-left: 10px;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .menu {
+        font-size: 0;
+        height: 28px;
+        white-space: nowrap;
+
+        li {
+            @include inline-block();
+            height: 28px;
+            margin-right: 5px;
+        }
+
+        a {
+            @include inline-block();
+            background-color: #244e82;
+            border-radius: 2px 2px 0 0;
+            color: #fff;
+            font-size: 14px;
+            height: 18px;
+            line-height: 18px;
+            padding: 5px 32px;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &.active,
+            &.active:hover {
+                background-color: #fff;
+                color: #333;
+            }
+        }
+    }
+}

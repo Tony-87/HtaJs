@@ -1,0 +1,4 @@
+<div class="baseInfo">
+	<p>用户姓名：{{name}}</p>
+	<p>联系电话：{{phoneNum}}</p>
+</div>

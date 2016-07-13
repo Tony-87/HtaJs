@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="l-viewport">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=1" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.2, user-scalable=1" media="(device-height:568px)" />
+<title>QTA</title>
+<link rel="stylesheet" href="http://qunarzz.com/hotel_qta/prd/styles/pages/common.css" media="screen" />
+</head>
+<body>
+<div class="l-header m-header">
+    <div class="logo">QTA</div>
+    <div class="nav">
+        <ul class="link">
+            <li><a href="javascript:void(0);">username</a></li>
+            <li><a href="javascript:void(0);">退出登录</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="javascript:void(0);" class="active">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+        </ul>
+    </div>
+</div>
+<div class="l-container-wrap">
+    <div class="l-container">
+        <div class="l-sidebar m-sidebar">
+            $sidebar$
+        </div>
+        <div class="l-main-wrap">
+            <div class="l-main">
+                <div class="m-workspace">
+                    <!--m:crumb-->
+                    <div class="ui-crumb m-crumb">
+                        <a href="javascript:void(0);" class="ui-crumb-back"><i class="ui-icon ui-icon-arrow-left">&#xf060;</i> 返回</a>
+                        <div class="ui-crumb-set">
+                            <div class="ui-crumb-set-inner">
+                                <a href="javascript:void(0);" class="ui-crumb-item">酒店管理</a>
+                                <span class="ui-crumb-divider"><em></em></span>
+                                <a href="javascript:void(0);" class="ui-crumb-item">RatePlan</a>
+                                <span class="ui-crumb-divider"><em></em></span>
+                                <span class="ui-crumb-item">新建RatePlan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/m:crumb-->
+                    <!--m:form-->
+                    <div class="m-form">
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">基本信息</div>
+                            </div>
+                            <div class="row">
+                                <div class="title"><span class="req">*</span> RatePlan中文名称</div>
+                                <div class="ui-textbox">
+                                    <div class="ui-textbox-input-wrap">
+                                        <input type="text" class="ui-textbox-input w300" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-error">
+                                <div class="title">RatePlan英文名称</div>
+                                <div class="ui-textbox">
+                                    <div class="ui-textbox-input-wrap">
+                                        <input type="text" class="ui-textbox-input w300" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">支付类型</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 预付</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 现付</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">佣金类型</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 订单费</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 间夜</label></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="title">RatePlan状态</div>
+                                <ul class="m-list">
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 有效</label></li>
+                                    <li class="item"><label><input type="radio" class="radiobox" /> 无效</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">早餐信息</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">免费早餐份数</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w40" />
+                                                </div>
+                                            </div>
+                                            <span class="label">份</span>
+                                        </div>
+                                        <div class="unit">
+                                            <label><input type="checkbox" class="checkbox" /> 可另加早餐</label>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="optional">
+                                                <div class="m-form">
+                                                    <div class="row">
+                                                        <div class="title">每份需另付</div>
+                                                        <select>
+                                                            <option>金额</option>
+                                                            <option>比例</option>
+                                                        </select>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="title">备注</div>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w300" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5>以下日期执行此早餐规则</h5>
+                                <!--m:grid-->
+                                <div class="ui-grid">
+                                    <div class="ui-grid-header">
+                                        <div class="ui-grid-header-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>在店日期</th>
+                                                        <th>有效星期</th>
+                                                        <th>早餐信息</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-content">
+                                        <div class="ui-grid-content-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2013-12-12 ~ 2014-01-06</td>
+                                                        <td>1/2/3/4/5/6/7</td>
+                                                        <td>免费数2，加餐每份20元（西餐）</td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="ops-modify"><i class="ui-icon ui-icon-pencil-square-o">&#xf044;</i></a>
+                                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/m:grid-->
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 添加含日期的早餐规则</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">退款规则</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">退款规则</div>
+                                <div class="label">无特殊规则设定下，入住当日不可退房费</div>
+                            </div>
+                            <div class="row">
+                                <h5>以下日期执行此退款规则</h5>
+                                <!--m:grid-->
+                                <div class="ui-grid">
+                                    <div class="ui-grid-header">
+                                        <div class="ui-grid-header-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>在店日期</th>
+                                                        <th>有效星期</th>
+                                                        <th>内容</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-content">
+                                        <div class="ui-grid-content-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2013-12-12 ~ 2014-01-06</td>
+                                                        <td>1/2/3/4/5/6/7</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>不允许变更/取消</li>
+                                                                <li>预订后未入住将扣除所有订单金额</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="ops-modify"><i class="ui-icon ui-icon-pencil-square-o">&#xf044;</i></a>
+                                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/m:grid-->
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 添加退款规则</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">担保规则</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">担保规则</div>
+                                <div class="label">无特殊规则设定下，所有订单不需要担保</div>
+                            </div>
+                            <div class="row">
+                                <h5>以下日期执行此担保规则</h5>
+                                <!--m:grid-->
+                                <div class="ui-grid">
+                                    <div class="ui-grid-header">
+                                        <div class="ui-grid-header-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>在店日期</th>
+                                                        <th>有效星期</th>
+                                                        <th>担保规则</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-content">
+                                        <div class="ui-grid-content-inner">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:150px" />
+                                                    <col style="width:100px" />
+                                                    <col style="width:auto" />
+                                                    <col style="width:70px" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2013-12-12 ~ 2014-01-06</td>
+                                                        <td>1/2/3/4/5/6/7</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>担保方式：首晚担保</li>
+                                                                <li>可变更/取消，需在入住前3天6:00点前通知</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="ops-modify"><i class="ui-icon ui-icon-pencil-square-o">&#xf044;</i></a>
+                                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/m:grid-->
+                                <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 添加担保规则</a>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">团购信息</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">早餐价值</div>
+                                <div class="ui-textbox">
+                                    <div class="ui-textbox-input-wrap">
+                                        <input type="text" class="ui-textbox-input w40" />
+                                    </div>
+                                </div>
+                                <span class="label">元</span>
+                            </div>
+                            <div class="row">
+                                <div class="title">赠品信息</div>
+                                <div class="set">
+                                    <div class="units">
+                                        <div class="unit">
+                                            <span class="label">赠品名称</span>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <span class="label">赠品价值</span>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w40" />
+                                                </div>
+                                            </div>
+                                            <span class="label">元</span>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                        <div class="unit">
+                                            <span class="label">赠品名称</span>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w80" />
+                                                </div>
+                                            </div>
+                                            <span class="label">赠品价值</span>
+                                            <div class="ui-textbox">
+                                                <div class="ui-textbox-input-wrap">
+                                                    <input type="text" class="ui-textbox-input w40" />
+                                                </div>
+                                            </div>
+                                            <span class="label">元</span>
+                                            <a href="javascript:void(0);" class="ops-delete"><i class="ui-icon ui-icon-times">&#xf00d;</i></a>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="ops-create"><i class="ui-icon ui-icon-plus">&#xf067;</i> 增加</a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="block block-collapsed block-expanded">
+                            <div class="header header-trigger">
+                                <h3 class="title"><span class="trigger-icon"><i class="ui-icon ui-icon-caret-right">&#xf0da;</i><i class="ui-icon ui-icon-caret-down">&#xf0d7;</i></span> 配置信息</h3>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="title">售卖类型</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label class="disabled"><input type="checkbox" disabled="disabled" value="" class="checkbox" /> 普通</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">售卖单位</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 间</label></li>
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 床</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">客人类型</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 外宾</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 内宾</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">会员级别</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 白板会员</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 普通会员</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 幸运会员</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">预订渠道</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> Qunar手机端</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> Qunar网站</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 腾邦国际</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 大鹏网</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 机+酒特惠</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">附加服务</div>
+                                    <div class="set">
+                                        <div class="units">
+                                            <div class="unit">
+                                                <label><input type="checkbox" class="checkbox" /> 可加床</label>
+                                                <select>
+                                                    <option>金额</option>
+                                                    <option>比例</option>
+                                                </select>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">元</span>
+                                            </div>
+                                            <div class="unit">
+                                                <label><input type="checkbox" class="checkbox" /> 服务费</label>
+                                                <select>
+                                                    <option>金额</option>
+                                                    <option>比例</option>
+                                                </select>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">元</span>
+                                            </div>
+                                            <div class="unit">
+                                                <label><input type="checkbox" class="checkbox" /> 政府税</label>
+                                                <select>
+                                                    <option>金额</option>
+                                                    <option>比例</option>
+                                                </select>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">元</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block block-collapsed block-expanded">
+                            <div class="header header-trigger">
+                                <h3 class="title"><span class="trigger-icon"><i class="ui-icon ui-icon-caret-right">&#xf0da;</i><i class="ui-icon ui-icon-caret-down">&#xf0d7;</i></span> 预订生效规则</h3>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="title">生效时段限制</div>
+                                    <ul class="m-list">
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 不限时</label></li>
+                                        <li class="item"><label><input type="radio" class="radiobox" /> 指定时段</label>
+                                            <div class="ui-datepicker">
+                                                <div class="ui-datepicker-source">
+                                                    <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                                                    <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                                        <div class="ui-datepicker-text">圣诞节前3天</div>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-calendarbox-panel-wrap">
+                                                    <div class="ui-calendarbox-panel" style="display:none"></div>
+                                                </div>
+                                            </div>
+                                            <span class="label"> - </span>
+                                            <div class="ui-datepicker">
+                                                <div class="ui-datepicker-source">
+                                                    <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                                                    <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                                        <div class="ui-datepicker-text">圣诞节前3天</div>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-calendarbox-panel-wrap">
+                                                    <div class="ui-calendarbox-panel" style="display:none"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">有效星期</div>
+                                    <ul class="m-list">
+                                        <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周一</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周二</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周三</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周四</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周五</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周六</label></li>
+                                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周日</label></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="title">预订限制条件</div>
+                                    <div class="set">
+                                        <div class="units">
+                                            <div class="unit">
+                                                <span class="label">每天</span>
+                                                <select>
+                                                    <option>18</option>
+                                                </select>
+                                                <span class="label">:</span>
+                                                <select>
+                                                    <option>00</option>
+                                                </select>
+                                                <span class="label">至</span>
+                                                <select>
+                                                    <option>当日</option>
+                                                </select>
+                                                <select>
+                                                    <option>18</option>
+                                                </select>
+                                                <span class="label">:</span>
+                                                <select>
+                                                    <option>00</option>
+                                                </select>
+                                                <span class="label">可预订</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最少提前</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">天</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">小时及以上开始预订</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最多提前</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">天</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">小时开始预订</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最少入住</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">天</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最多入住</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">天</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最少预订</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">间</span>
+                                            </div>
+                                            <div class="unit">
+                                                <span class="label">最多预订</span>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w40" />
+                                                    </div>
+                                                </div>
+                                                <span class="label">间</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="header">
+                                <div class="title">关联房型</div>
+                            </div>
+                            <div class="row">
+                                <ul class="m-list">
+                                    <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 无敌大床房</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 豪华大床房</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> nb大床房</label></li>
+                                    <li class="item"><label><input type="checkbox" class="checkbox" /> 超级大床房</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="btns">
+                                <button class="ui-btn ui-btn-primary ui-btn-large">确认并保存</button>
+                                <button class="ui-btn ui-btn-large">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/m:form-->
+                </div>
+                <div class="m-footer">
+                    <div class="copyright">&copy; 2014 Qunar.com. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--m:dialog-->
+<div class="ui-dialog" style="display:block;position:absolute;width:600px;z-index:2000;">
+    <div class="ui-dialog-inner">
+        <div class="ui-dialog-header">
+            <div class="ui-dialog-close"><i class="ui-icon ui-icon-times">&#xf00d;</i></div>
+            <div class="ui-dialog-title">设置早餐</div>
+        </div>
+        <div class="ui-dialog-content">
+            <!--m:form-->
+            <div class="m-form">
+                <div class="row">
+                    <div class="title">在店时间</div>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                    <span class="label"> - </span>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">有效星期</div>
+                    <ul class="m-list">
+                        <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周一</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周二</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周三</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周四</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周五</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周六</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周日</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">免费早餐份数</div>
+                    <div class="ui-textbox">
+                        <div class="ui-textbox-input-wrap">
+                            <input type="text" value="" class="ui-textbox-input w40" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">可否另加早餐</div>
+                    <ul class="m-list">
+                        <li class="item"><label><input type="radio" class="radiobox" /> 是</label></li>
+                        <li class="item"><label><input type="radio" class="radiobox" /> 否</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">每份需另付</div>
+                    <select>
+                        <option>金额</option>
+                        <option>比例</option>
+                    </select>
+                    <div class="ui-textbox">
+                        <div class="ui-textbox-input-wrap">
+                            <input type="text" value="" class="ui-textbox-input w40" />
+                        </div>
+                    </div>
+                    <span class="label">元</span>
+                </div>
+                <div class="row">
+                    <div class="title">备注</div>
+                    <div class="ui-textbox">
+                        <div class="ui-textbox-input-wrap">
+                            <input type="text" value="" class="ui-textbox-input w300" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/m:form-->
+        </div>
+        <div class="ui-dialog-footer clrfix">
+            <div class="ui-dialog-btns">
+                <button class="ui-btn ui-btn-primary">确定</button>
+                <button class="ui-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/m:dialog-->
+
+<!--m:dialog-->
+<div class="ui-dialog" style="display:block;position:absolute;width:700px;z-index:2000;">
+    <div class="ui-dialog-inner">
+        <div class="ui-dialog-header">
+            <div class="ui-dialog-close"><i class="ui-icon ui-icon-times">&#xf00d;</i></div>
+            <div class="ui-dialog-title">设置退款规则</div>
+        </div>
+        <div class="ui-dialog-content">
+            <!--m:form-->
+            <div class="m-form">
+                <div class="row">
+                    <div class="title">
+                        <select>
+                            <option>在店时间</option>
+                            <option>到店时间</option>
+                            <option>预定时间</option>
+                        </select>
+                    </div>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                    <span class="label"> - </span>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">有效星期</div>
+                    <ul class="m-list">
+                        <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周一</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周二</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周三</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周四</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周五</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周六</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周日</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">设置退款日期</div>
+                    <div class="set">
+                        <div class="units">
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 不允许变更/取消</label>
+                                <span class="label g-color-memo">（未入住扣取全部支付金额）</span>
+                            </div>
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 允许在指定天数前变更/取消</label>
+                                <div class="optional">
+                                    <span class="label">在到店日</span>
+                                    <div class="ui-textbox">
+                                        <div class="ui-textbox-input-wrap">
+                                            <input type="text" value="" class="ui-textbox-input w40" />
+                                        </div>
+                                    </div>
+                                    <span class="label">天</span>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">之前不扣房费</span>
+                                    <br />
+                                    <span class="label">此后至到店日的</span>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">之前</span>
+                                    <select>
+                                        <option>扣除房费百分比</option>
+                                        <option>扣除首晚房费</option>
+                                    </select>
+                                    <div class="ui-textbox">
+                                        <div class="ui-textbox-input-wrap">
+                                            <input type="text" value="" class="ui-textbox-input w40" />
+                                        </div>
+                                    </div>
+                                    <span class="label">%</span>
+                                </div>
+                            </div>
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 允许在指定日期变更/取消</label>
+                                <div class="optional">
+                                    <span class="label">在</span>
+                                    <div class="ui-datepicker">
+                                        <div class="ui-datepicker-source">
+                                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-calendarbox-panel-wrap">
+                                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                                        </div>
+                                    </div>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">之前不扣房费，此后扣除全部费用</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/m:form-->
+        </div>
+        <div class="ui-dialog-footer clrfix">
+            <div class="ui-dialog-btns">
+                <button class="ui-btn ui-btn-primary">确定</button>
+                <button class="ui-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/m:dialog-->
+
+<!--m:dialog-->
+<div class="ui-dialog" style="display:block;position:absolute;width:700px;z-index:2000;">
+    <div class="ui-dialog-inner">
+        <div class="ui-dialog-header">
+            <div class="ui-dialog-close"><i class="ui-icon ui-icon-times">&#xf00d;</i></div>
+            <div class="ui-dialog-title">设置担保规则</div>
+        </div>
+        <div class="ui-dialog-content">
+            <!--m:form-->
+            <div class="m-form">
+                <div class="row">
+                    <div class="title">在店时间</div>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                    <span class="label"> - </span>
+                    <div class="ui-datepicker">
+                        <div class="ui-datepicker-source">
+                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                            </div>
+                        </div>
+                        <div class="ui-calendarbox-panel-wrap">
+                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">有效星期</div>
+                    <ul class="m-list">
+                        <li class="item all"><label><input type="checkbox" class="checkbox" /> 全选</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周一</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周二</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周三</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周四</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周五</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周六</label></li>
+                        <li class="item"><label><input type="checkbox" class="checkbox" /> 周日</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">担保条件</div>
+                    <div class="set">
+                        <div class="units">
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 仅超时超量时担保</label>
+                                <div class="optional">
+                                    <label><input type="checkbox" class="checkbox" /> 超时担保：</label>
+                                    <span class="label">在</span>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">（不含）之后到店需要担保</span>
+                                    <br />
+                                    <label><input type="checkbox" class="checkbox" /> 超量担保：</label>
+                                    <span class="label">预订大于</span>
+                                    <select>
+                                        <option>1</option>
+                                    </select>
+                                    <span class="label">间（含）需要担保</span>
+                                </div>
+                            </div>
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 所有预订都需要担保</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-error">
+                    <div class="title">担保方式</div>
+                    <ul class="m-list">
+                        <li class="item"><label><input type="radio" class="radiobox" /> 首晚担保</label></li>
+                        <li class="item"><label><input type="radio" class="radiobox" /> 全额担保</label></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="title">变更/取消规则</div>
+                    <div class="set">
+                        <div class="units">
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 不可变更/取消</label>
+                                <span class="label g-color-memo">（未入住扣除全额担保金额）</span>
+                            </div>
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 可变更/取消：</label>
+                                <div class="optional">
+                                    <span class="label">在到店日</span>
+                                    <div class="ui-textbox">
+                                        <div class="ui-textbox-input-wrap">
+                                            <input type="text" value="" class="ui-textbox-input w40" />
+                                        </div>
+                                    </div>
+                                    <span class="label">天</span>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">之前不扣除除房费，此后扣除全部担保费用</span>
+                                </div>
+                            </div>
+                            <div class="unit">
+                                <label><input type="radio" class="radiobox" /> 可变更/取消：</label>
+                                <div class="optional">
+                                    <span class="label">在</span>
+                                    <div class="ui-datepicker">
+                                        <div class="ui-datepicker-source">
+                                            <input type="text" value="2013-07-13" maxlength="10" readonly="readonly" class="ui-datepicker-input" />
+                                            <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-calendar-o">&#xf133;</i>
+                                                <div class="ui-datepicker-text">圣诞节前3天</div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-calendarbox-panel-wrap">
+                                            <div class="ui-calendarbox-panel" style="display:none"></div>
+                                        </div>
+                                    </div>
+                                    <select>
+                                        <option>18:00</option>
+                                    </select>
+                                    <span class="label">之前不扣担保费，此后扣除全部担保费用</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/m:form-->
+        </div>
+        <div class="ui-dialog-footer clrfix">
+            <div class="ui-dialog-btns">
+                <button class="ui-btn ui-btn-primary">确定</button>
+                <button class="ui-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/m:dialog-->
+</body>
+</html>

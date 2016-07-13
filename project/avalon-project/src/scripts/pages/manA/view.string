@@ -1,0 +1,7 @@
+<div class="l-workspace-topbar">
+	<div ms-include-src="'ui.softphone'" data-include-replace="true"></div>
+	<div ms-include-src="'ui.tab'" data-include-replace="true"></div>
+</div>
+<div ms-controller="info">
+	<div ms-include-src="tpl" data-include-replace="true"></div>
+</div>

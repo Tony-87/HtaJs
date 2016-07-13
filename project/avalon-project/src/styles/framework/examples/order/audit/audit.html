@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="l-viewport">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=1" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.2, user-scalable=1" media="(device-height:568px)" />
+<title>QTA</title>
+<link rel="stylesheet" href="http://qunarzz.com/hotel_qta/prd/styles/pages/common.css" media="screen" />
+</head>
+<body>
+<div class="l-header m-header">
+    <div class="logo">QTA</div>
+    <div class="nav">
+        <ul class="link">
+            <li><a href="javascript:void(0);">username</a></li>
+            <li><a href="javascript:void(0);">退出登录</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="javascript:void(0);" class="active">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+            <li><a href="javascript:void(0);">$菜单项$</a></li>
+        </ul>
+    </div>
+</div>
+<div class="l-container-wrap">
+    <div class="l-container">
+        <div class="l-sidebar m-sidebar">
+            $sidebar$
+        </div>
+        <div class="l-main-wrap">
+            <div class="l-main">
+                <div class="m-workspace">
+                    <div class="l-main-header">
+                        <!--m:tab-->
+                        <div class="ui-tab m-tab clrfix">
+                            <div class="ui-tab-left">
+                                <ul class="ui-tab-set clrfix">
+                                    <li class="ui-tab-item ui-tab-active"><a href="javascript:void(0);">日审</a></li>
+                                    <li class="ui-tab-item"><a href="javascript:void(0);">夜审</a></li>
+                                    <li class="ui-tab-item"><a href="javascript:void(0);">复审</a></li>
+                                </ul>
+                            </div>
+                            <div class="ui-tab-right">
+                                <button class="ui-btn ui-btn-primary">签入</button>
+                            </div>
+                        </div>
+                        <!--/m:tab-->
+                    </div>
+                    <!--m:search-->
+                    <div class="m-search">
+                        <div class="layout-wrap">
+                            <table class="layout">
+                                <tr>
+                                    <td class="cell-form">
+                                        <div class="row">
+                                            <div class="set set-fix">
+                                                <div class="title">订单号</div>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w100" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="set set-fix">
+                                                <div class="title">日期类型</div>
+                                                <ul class="m-list">
+                                                    <li class="item"><label><input type="radio" class="radiobox" /> 入住日期</label></li>
+                                                    <li class="item"><label><input type="radio" class="radiobox" /> 离店日期</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="set set-fix">
+                                                <div class="title">日期段</div>
+                                                <div class="ui-datepicker ui-daterangepicker ui-popup">
+                                                    <div class="ui-datepicker-source ui-popup-source">
+                                                        <div class="ui-datepicker-input"><strong>日期范围：</strong>2012-12-30 至 2013-01-01</div>
+                                                        <div class="ui-datepicker-icon-wrap"><i class="ui-datepicker-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-datepicker-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                    </div>
+                                                    <div class="ui-popup-panel-wrap">
+                                                        <div class="ui-popup-panel" style="display:none"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="set set-fix">
+                                                <div class="title">酒店名称</div>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w100" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="set set-fix">
+                                                <div class="title">城市</div>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w100" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="set set-fix">
+                                                <div class="title">星级档次</div>
+                                                <div class="ui-dropdown" style="width:112px">
+                                                    <div class="ui-dropdown-source">
+                                                        <div class="ui-dropdown-input">全部</div>
+                                                        <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                    </div>
+                                                    <div class="ui-dropdown-menu-wrap">
+                                                        <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" style="display:block;">
+                                            <div class="row">
+                                                <div class="set set-fix">
+                                                    <div class="title">入住人姓名</div>
+                                                    <div class="ui-textbox">
+                                                        <div class="ui-textbox-input-wrap">
+                                                            <input type="text" class="ui-textbox-input w100" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="set set-fix">
+                                                    <div class="title">联系人电话</div>
+                                                    <div class="ui-textbox">
+                                                        <div class="ui-textbox-input-wrap">
+                                                            <input type="text" class="ui-textbox-input w100" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="set set-fix">
+                                                    <div class="title">订单类型</div>
+                                                    <div class="ui-dropdown" style="width:112px">
+                                                        <div class="ui-dropdown-source">
+                                                            <div class="ui-dropdown-input">全部</div>
+                                                            <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                        </div>
+                                                        <div class="ui-dropdown-menu-wrap">
+                                                            <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="set set-fix">
+                                                    <div class="title">订单状态</div>
+                                                    <div class="ui-dropdown" style="width:112px">
+                                                        <div class="ui-dropdown-source">
+                                                            <div class="ui-dropdown-input">全部</div>
+                                                            <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                        </div>
+                                                        <div class="ui-dropdown-menu-wrap">
+                                                            <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="set set-fix">
+                                                    <div class="title">审核方式</div>
+                                                    <div class="ui-dropdown" style="width:112px">
+                                                        <div class="ui-dropdown-source">
+                                                            <div class="ui-dropdown-input">全部</div>
+                                                            <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                        </div>
+                                                        <div class="ui-dropdown-menu-wrap">
+                                                            <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="set set-fix">
+                                                    <div class="title">传真发送状态</div>
+                                                    <div class="ui-dropdown" style="width:112px">
+                                                        <div class="ui-dropdown-source">
+                                                            <div class="ui-dropdown-input">全部</div>
+                                                            <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                        </div>
+                                                        <div class="ui-dropdown-menu-wrap">
+                                                            <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="set set-fix">
+                                                    <div class="title">传真回传状态</div>
+                                                    <div class="ui-dropdown" style="width:112px">
+                                                        <div class="ui-dropdown-source">
+                                                            <div class="ui-dropdown-input">全部</div>
+                                                            <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                        </div>
+                                                        <div class="ui-dropdown-menu-wrap">
+                                                            <div class="ui-dropdown-menu" style="display:none;width:112px"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-ops">
+                                        <button type="button" class="ui-btn ui-btn-secondary ui-btn-large">搜索</button>
+                                        <p><a href="javascript:void(0);">清空搜索条件</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="trigger">
+                            <div class="inner"><a href="javascript:void(0);">收起更多搜索条件</a></div>
+                        </div>
+                    </div>
+                    <!--/m:search-->
+                    <!--m:orderaudit-->
+                    <div class="m-orderaudit">
+                        <!--m:toolbar-->
+                        <div class="ui-toolbar m-toolbar clrfix">
+                            <div class="ui-toolbar-left">
+                                <div class="ui-toolbar-group">
+                                    <div class="ui-toolbar-cell">
+                                        <div class="ui-tab ui-tab-mini clrfix">
+                                            <ul class="ui-tab-set clrfix">
+                                                <li class="ui-tab-item ui-tab-active"><a href="javascript:void(0);">应审核订单(233)</a></li>
+                                                <li class="ui-tab-item"><a href="javascript:void(0);">紧急日审(10)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-toolbar-group">
+                                    <div class="ui-toolbar-cell">
+                                        <ul class="m-list">
+                                            <li class="item">酒店数<span class="g-color-warning">90</span>，已审核<span class="g-color-warning">123</span></li>
+                                            <li class="item"><a href="javascript:void(0);">未匹配传真<span class="g-color-warning">80</span></a></li>
+                                            <li class="item"><a href="javascript:void(0);">匹配失败传真</a></li>
+                                            <li class="item"><a href="javascript:void(0);">批量发送传真</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-toolbar-right">
+                                <div class="ui-toolbar-group">
+                                    <div class="ui-toolbar-cell">
+                                        <a href="javascript:void(0);">批量打开</a>
+                                    </div>
+                                </div>
+                                <div class="ui-toolbar-group">
+                                    <div class="ui-toolbar-cell">
+                                        <button class="ui-btn">导出Excel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/m:toolbar-->
+                        <!--m:grid-->
+                        <div class="ui-grid">
+                            <div class="ui-grid-header">
+                                <div class="ui-grid-header-inner">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:60px" />
+                                            <col style="width:auto" />
+                                            <col style="width:140px" />
+                                            <col style="width:65px" />
+                                            <col style="width:65px" />
+                                            <col style="width:65px" />
+                                            <col style="width:120px" />
+                                            <col style="width:120px" />
+                                            <col style="width:60px" />
+                                            <col style="width:60px" />
+                                            <col style="width:50px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>订单尾号</th>
+                                                <th>入住信息</th>
+                                                <th>价格</th>
+                                                <th>实住人</th>
+                                                <th>房间号</th>
+                                                <th>确认号</th>
+                                                <th>确认结果</th>
+                                                <th>备注</th>
+                                                <th>传真状态</th>
+                                                <th>审核操作</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/m:grid-->
+                        <div class="content">
+                            <div class="audititem">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:60px" />
+                                        <col style="width:auto" />
+                                        <col style="width:140px" />
+                                        <col style="width:65px" />
+                                        <col style="width:65px" />
+                                        <col style="width:65px" />
+                                        <col style="width:120px" />
+                                        <col style="width:120px" />
+                                        <col style="width:60px" />
+                                        <col style="width:60px" />
+                                        <col style="width:50px" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="row1 calling">
+                                            <td colspan="11">
+                                                <div class="clrfix">
+                                                    <div class="g-left">
+                                                        汉庭酒店厦门轮渡店 <a href="javascript:void(0);"><i class="ui-icon ui-icon-phone-square">&#xf098;</i></a> <a href="javascript:void(0);">查看联系方式</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row2">
+                                            <td class="urgent">
+                                                <ul>
+                                                    <li>
+                                                        <div class="ui-popup">
+                                                            <div class="ui-popup-source"><a href="javascript:void(0);">1234c</a></div>
+                                                            <div class="ui-popup-panel-wrap">
+                                                                <div class="ui-popup-panel" style="display:block;width:200px">
+                                                                    <div class="ui-popup-content">
+                                                                        <p>订单号: srld1401201632<span class="g-color-warning">5690c</span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li><i>担</i></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><i>住</i>01-22 <i>离</i>01-24 3天</li>
+                                                    <li>豪华套房双早 1间</li>
+                                                    <li>[最晚]01-20 18:00</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>共计340元</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="ui-dropdown" style="width:80px">
+                                                    <div class="ui-dropdown-source">
+                                                        <div class="ui-dropdown-input">全部</div>
+                                                        <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                    </div>
+                                                    <div class="ui-dropdown-menu-wrap">
+                                                        <div class="ui-dropdown-menu" style="display:none;width:80px"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w80" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>发送成功</li>
+                                                    <li>回传已审</li>
+                                                    <li><a href="javascript:void(0);">查看传真</a></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <button class="ui-btn ui-btn-primary">确定</button>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">日志</a></li>
+                                                    <li><a href="javascript:void(0);">短信</a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="audititem">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:60px">
+                                        <col style="width:auto">
+                                        <col style="width:140px">
+                                        <col style="width:65px">
+                                        <col style="width:65px" />
+                                        <col style="width:65px" />
+                                        <col style="width:120px" />
+                                        <col style="width:120px" />
+                                        <col style="width:60px" />
+                                        <col style="width:60px" />
+                                        <col style="width:50px" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="row1">
+                                            <td colspan="7">
+                                                汉庭酒店厦门轮渡店 <a href="javascript:void(0);"><i class="ui-icon ui-icon-phone-square">&#xf098;</i></a> <a href="javascript:void(0);">查看联系方式</a>
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w150" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><button class="ui-btn ui-btn-primary">批量</button></td>
+                                            <td><a href="javascript:void(0);">打开</a></td>
+                                        </tr>
+                                        <tr class="row2">
+                                            <td>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">1234c</a></li>
+                                                    <li><i>担</i></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><i>住</i>01-22 <i>离</i>01-24 3天</li>
+                                                    <li>豪华套房双早 1间</li>
+                                                    <li>[最晚]01-20 18:00</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>共计340元</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="ui-dropdown" style="width:80px">
+                                                    <div class="ui-dropdown-source">
+                                                        <div class="ui-dropdown-input">全部</div>
+                                                        <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                    </div>
+                                                    <div class="ui-dropdown-menu-wrap">
+                                                        <div class="ui-dropdown-menu" style="display:none;width:80px"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w80" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td rowspan="2">
+                                                <ul>
+                                                    <li>发送成功</li>
+                                                    <li>回传已审</li>
+                                                    <li><a href="javascript:void(0);">查看传真</a></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <button class="ui-btn ui-btn-primary">确定</button>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">日志</a></li>
+                                                    <li><a href="javascript:void(0);">短信</a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr class="row2">
+                                            <td>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">1234c</a></li>
+                                                    <li><i>担</i></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><i>住</i>01-22 <i>离</i>01-24 3天</li>
+                                                    <li>豪华套房双早 1间</li>
+                                                    <li>[最晚]01-20 18:00</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>12-08至12-09 1330元</li>
+                                                    <li>共计340元</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul class="group">
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="ui-textbox">
+                                                            <div class="ui-textbox-input-wrap">
+                                                                <input type="text" class="ui-textbox-input w40" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="ui-dropdown" style="width:80px">
+                                                    <div class="ui-dropdown-source">
+                                                        <div class="ui-dropdown-input">全部</div>
+                                                        <div class="ui-dropdown-icon-wrap"><i class="ui-dropdown-icon ui-icon ui-icon-angle-up">&#xf106;</i><i class="ui-dropdown-icon ui-icon ui-icon-angle-down">&#xf107;</i></div>
+                                                    </div>
+                                                    <div class="ui-dropdown-menu-wrap">
+                                                        <div class="ui-dropdown-menu" style="display:none;width:80px"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="ui-textbox">
+                                                    <div class="ui-textbox-input-wrap">
+                                                        <input type="text" class="ui-textbox-input w80" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="ui-btn ui-btn-primary">确定</button>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">日志</a></li>
+                                                    <li><a href="javascript:void(0);">短信</a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="footer clrfix">
+                            <div class="ui-pager">
+                                <div class="ui-pager-items">
+                                    <div class="ui-pager-current">1</div>
+                                    <div class="ui-pager-item">2</div>
+                                    <div class="ui-pager-item">3</div>
+                                    <div class="ui-pager-omit">...</div>
+                                    <div class="ui-pager-item">100</div>
+                                </div>
+                                <div class="ui-pager-next">下一页</div>
+                                <div class="ui-pager-jump">
+                                    <span class="ui-pager-text">共100页</span>
+                                    <span class="ui-pager-text">，到第</span>
+                                    <div class="ui-textbox">
+                                        <input type="text" value="1" class="ui-textbox-input" />
+                                    </div>
+                                    <span class="ui-pager-text">页</span>
+                                    <button class="ui-btn">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/m:orderaudit-->
+                    <i class="icon-text icon-pink">预留房</i>
+                    <i class="icon-text icon-gray">变</i>
+                    <i class="icon-text icon-gray">遗留</i>
+                    <i class="icon-text icon-gray">已缓</i>
+                    <i class="icon-text icon-blue">预付</i>
+                    <i class="icon-text icon-blue">担保</i>
+                    <i class="icon-text icon-blue">住</i>
+                    <i class="icon-text icon-blue">离</i>
+                    <i class="icon-text icon-blue">返</i>
+                    <i class="icon-text icon-pink">促</i>
+                    <i class="icon-call"></i>
+                </div>
+                <div class="m-footer">
+                    <div class="copyright">&copy; 2014 Qunar.com. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

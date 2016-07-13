@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.ui-btn {
+    @include inline-block();
+    @include user-select(none);
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    font-size: 12px;
+    height: 26px;
+    outline: none;
+    overflow: visible;
+    _overflow-y: hidden;
+    padding: 0 10px;
+    text-decoration: none;
+
+    &:hover {
+        @include box-shadow(1px, 1px, 0, 0, 10%);
+        background-color: #f8f8f8;
+        border-color: #bbb;
+        color: #333;
+    }
+}
+a.ui-btn,
+span.ui-btn {
+    height: 24px;
+    line-height: 24px;
+}
+
+.ui-btn-primary {
+    background-color: #58b359;
+    border-color: #45a846;
+    color: #fff;
+
+    &:hover {
+        background-color: #68c969;
+        border-color: #3e973e;
+        color: #fff;
+    }
+}
+
+.ui-btn-secondary {
+    background-color: #3775c0;
+    border-color: #1d5eac;
+    color: #fff;
+
+    &:hover {
+        background-color: #3d8be9;
+        border-color: #1a5092;
+        color: #fff;
+    }
+}
+
+.ui-btn-red {
+    background-color: #f55;
+    border: 1px solid #f04a4a;
+    color: #fff;
+
+    &:hover {
+        background-color: #ff6161;
+        border: 1px solid #de3232;
+        color: #fff;
+    }
+}
+
+.ui-btn-orange {
+    background-color: #f90;
+    border: 1px solid #e88b00;
+    color: #fff;
+
+    &:hover {
+        background-color: #ff9f20;
+        border: 1px solid #d27e00;
+        color: #fff;
+    }
+}
+
+.ui-btn-disabled {
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+    color: #ccc;
+    cursor: default;
+
+    &:hover {
+        @include box-shadow(none);
+        background-color: #f5f5f5;
+        border-color: #d9d9d9;
+        color: #ccc;
+        cursor: default;
+    }
+}
+
+.ui-btn-small {
+    height: 22px;
+    padding: 0 5px;
+}
+a.ui-btn-small,
+span.ui-btn-small {
+    height: 20px;
+    line-height: 20px;
+}
+
+.ui-btn-large {
+    font-size: 14px;
+    font-weight: 700;
+    height: 32px;
+    padding: 0 15px;
+}
+a.ui-btn-large,
+span.ui-btn-large {
+    height: 30px;
+    line-height: 30px;
+}
+
+.ui-btn-big {
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    padding: 0 25px;
+}
+a.ui-btn-big,
+span.ui-btn-big {
+    height: 38px;
+    line-height: 38px;
+}

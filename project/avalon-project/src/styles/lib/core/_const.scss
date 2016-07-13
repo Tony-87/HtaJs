@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.clr {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.clrfix {
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+@each $width in 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 250, 300, 350, 400, 450, 500, 600, 640 {
+    .w#{$width} {
+        width: #{$width}px;
+    }
+}
+
+@each $width in 3, 4, 5, 6, 8, 10 {
+    .w#{$width}em {
+        width: #{$width}em;
+    }
+}
+
+.checkbox,
+.radiobox {
+    height: 13px;
+    _position: relative;
+    vertical-align: middle;
+    vertical-align: -2px\0;
+    width: 13px;
+}
+
+.label,
+.inline {
+    @include inline-block();
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+label {
+    .checkbox,
+    .radiobox {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        color: #ddd;
+        cursor: default;
+
+        .checkbox,
+        .radiobox {
+            cursor: default;
+        }
+    }
+}
+
+a.disabled {
+    color: #ddd;
+    cursor: default;
+}
+
+.whitespace {
+    white-space: nowrap;
+}
+
+.ime-disable {
+    ime-mode: disabled;
+}

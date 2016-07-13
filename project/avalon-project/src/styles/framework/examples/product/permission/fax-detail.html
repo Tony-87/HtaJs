@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="l-viewport">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=1"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.2, user-scalable=1"
+          media="(device-height:568px)"/>
+    <title>QTA</title>
+    <link rel="stylesheet" href="../../../vendors/onionui/onionui.css" media="screen"/>
+    <link rel="stylesheet" href="../../../dist/packaged/qta.css" media="screen"/>
+</head>
+<body>
+
+<div class="m-month-fax-header clrfix">
+    <div class="header">
+        <h1 class="title">查看未匹配月结传真</h1>
+    </div>
+    <div class="info">
+        <div class="label">发送号码 15209248744</div>
+        <div class="label">接收时间 2014-03-28 20:58:20</div>
+    </div>
+    <div class="ops">
+        <div class="ui-toolbar clrfix">
+            <div class="ui-toolbar-cell">
+                <button class="ui-btn"><i class="ui-icon ui-icon-repeat"></i> 旋转</button>
+            </div>
+            <div class="ui-toolbar-cell">
+                <button class="ui-btn"><i class="ui-icon ui-icon-search-plus"></i> 放大</button>
+            </div>
+            <div class="ui-toolbar-cell">
+                <button class="ui-btn"><i class="ui-icon ui-icon-search-minus"></i> 缩小</button>
+            </div>
+            <div class="ui-toolbar-cell">
+                <button class="ui-btn"><i class="ui-icon ui-icon-print"></i> 打印</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="l-container-wrap">
+    <div class="l-container">
+        <div class="l-sidebar m-month-fax-sidebar m-month-fax-sidebar-wo-scrollbar" style="width: 470px;padding: 10px;">
+            <div class="sidebar-inner">
+                <!--m:form-->
+                <div class="m-search" style="border: none; display: block;">
+                    <div class="row first-row">
+                        <div class="set">
+                            <div class="title">业务类型：</div>
+                            <select>
+                                <option>现付返佣</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="set">
+                            <div class="title">供应商名称：</div>
+                            <div class="ui-textbox">
+                                <div class="ui-textbox-input-wrap">
+                                    <input type="text" class="ui-textbox-input w120"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <div class="title">供应商id：</div>
+                            <div class="ui-textbox">
+                                <div class="ui-textbox-input-wrap">
+                                    <input type="text" class="ui-textbox-input w120"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="set">
+                            <div class="title">供应商传真：</div>
+                            <div class="ui-textbox">
+                                <div class="ui-textbox-input-wrap">
+                                    <input type="text" class="ui-textbox-input w120"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <div class="title">账单周期：</div>
+                            <select>
+                                <option>2014</option>
+                            </select>年
+                            <select>
+                                <option>3</option>
+                            </select>月
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="ops clrfix">
+                        <button class="ui-btn ui-btn-secondary search-btn">搜索账单信息</button>
+                    </div>
+                </div>
+            </div>
+            <!--/m:form-->
+            <div class="gridcontainer">
+                <div class="label"> 搜索到<strong>1</strong>个账单信息</div>
+                <!--m:grid-->
+                <div class="ui-grid">
+                    <div class="ui-grid-header">
+                        <div class="ui-grid-header-inner">
+                            <table>
+                                <colgroup>
+                                    <col style="width:300px">
+                                    <col style="width:160px">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>账单信息</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="ui-grid-content">
+                        <div class="ui-grid-content-inner">
+                            <table>
+                                <colgroup>
+                                    <col style="width:300px">
+                                    <col style="width:160px">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>供应商名称：格林豪泰天津咸阳路快捷酒店</li>
+                                            <li>账单周期：2014-03</li>
+                                            <li>应收佣金：345.6</li>
+                                            <li>佣金状态：已确认</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);">关联账单并查看账单明细</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/m:grid-->
+            </div>
+        </div>
+        <div class="l-main-wrap" style="overflow: hidden; left: 492px;">
+        </div>
+    </div>
+</div>
+<div class="ui-dialog m-month-fax-dialog" style="display:none; position:absolute; width:500px; z-index:2000;">
+    <div class="ui-dialog-inner">
+        <div class="ui-dialog-header">
+            <div class="ui-dialog-close"><i class="ui-icon ui-icon-times"></i></div>
+            <div class="ui-dialog-title">关联提示</div>
+        </div>
+        <div class="ui-dialog-content">
+            <p>确认将此传真与以下账单关联吗？</p>
+            <div class="w400">
+                <ul>
+                    <li>供应商名称：格林豪泰天津咸阳路快捷酒店</li>
+                    <li>账单周期：2014-03</li>
+                    <li>应收佣金：345.6</li>
+                    <li>佣金状态：已确认</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-dialog-footer clrfix">
+            <div class="ui-dialog-btns">
+                <button class="ui-btn ui-btn-secondary">确认关联</button>
+                <button class="ui-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+
+</html>

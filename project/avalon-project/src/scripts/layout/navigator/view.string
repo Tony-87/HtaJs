@@ -1,0 +1,18 @@
+<div class="l-viewport-header">
+	<div class="m-header"></div>
+</div>
+<div class="l-viewport-container">
+	<div class="l-viewport-container-inner">
+		<div class="l-viewport-sidebar">
+			<div ms-controller="navigator" class="m-sidebar ms-controller">
+				<ul ms-each-item="items" class="menu">
+					<li><a ms-href="item.url" ms-class="active:item.key == active">{{item.title}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="qta_container" class="l-viewport-main">
+			<div id="workspace" ms-controller="workspace" ms-include-src="content" data-include-rendered="render" class="l-workspace"></div>
+		</div>
+	</div>
+</div>

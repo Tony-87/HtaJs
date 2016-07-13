@@ -1,0 +1,22 @@
+{
+    "name": "csscute-qta",
+    "version": "1.0.0",
+    "description": "csscute-qta",
+    "main": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "li.wang",
+    "repository": {
+        "type": "git",
+        "url": "http://gitlab.corp.qunar.com/fed/csscute-qta.git"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-banner": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-watch": "*"
+    }
+}
+

@@ -1,0 +1,91 @@
+.m-roomprice {
+    .inline-block();
+    vertical-align: top;
+
+    .group {
+        margin-bottom: 10px;
+    }
+
+    th {
+        background-color: #888;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+
+        &.selected {
+            background-color: #3675c0;
+        }
+
+        &.price {
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+    }
+
+    td {
+        &.selected {
+            background-color: #3675c0;
+        }
+
+        &.price {
+            vertical-align: top;
+        }
+    }
+
+    .header {
+        margin: 0;
+        max-width: 532px;
+        padding: 0;
+
+        .cell {
+            .float-left();
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            margin-left: -1px;
+            padding: 3px 0;
+            width: 75px;
+        }
+
+        .weekend {
+            color: #fffb00;
+        }
+    }
+
+    .content {
+        max-width: 532px;
+
+        .cell {
+            .float-left();
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: -1px 0 0 -1px;
+            text-align: center;
+            width: 75px;
+        }
+
+        .date {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+            padding: 3px 0;
+        }
+
+        .data {
+            font-family: arial, tahoma, sans-serif;
+            // height: 36px;
+            padding: 3px 0;
+        }
+
+        .selected {
+            background-color: #3675c0;
+            color: #fff;
+        }
+    }
+
+    .guarantee {
+        position: relative;
+
+        .ui-tips {
+            top: 20px;
+        }
+    }
+}

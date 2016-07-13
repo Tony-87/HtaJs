@@ -1,0 +1,108 @@
+.m-faq {
+    overflow: hidden;
+    width: 1100px;
+    .section {
+        width: 75%;
+        float: left;
+    }
+    .sidebar {
+        float: left;
+        position: relative;
+        width: 25%;
+        .affix {
+            width: 280px;
+            background-color: #f7f7f8;
+            border-radius: 5px;
+            position: static;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .title {
+                padding-left: 20px;
+                color: #5d83a3;
+                font-size: 16px;
+                font-weight: 600px;
+                line-height: 30px;
+            }
+        }
+        @media (min-width: 1345px) {
+            .affix {
+                position: fixed;
+            }
+        }
+    }
+
+    dl {
+        padding: 5px;
+    }
+    dd {
+        padding-top: 5px;
+    }
+    .answer {
+        font-size: 12px;
+        line-height: 24px;
+        padding-bottom: 5px;
+        h5 {
+            font-size: 14px;
+            font-weight: 700;
+            padding-top: 8px;
+        }
+        .list() {
+            margin-left: 20px;
+            line-height: 20px;
+            color: #666666;
+        }
+        ol {
+            list-style-type: decimal;
+            .list();
+        }
+        ul {
+            list-style-type: circle;
+            .list();
+        }
+        img {
+            border: 1px solid #999;
+            max-width: 90%;
+        }
+        .table-sample {
+            border: 1px solid #e5e5e5;
+            margin-left: 3em;
+            width: 500px;
+
+            th {
+                background-color: #f8f8f8;
+                border: 1px solid #e5e5e5;
+                padding: 3px 5px;
+            }
+
+            td {
+                border: 1px solid #e5e5e5;
+                padding: 3px 5px;
+            }
+        }
+    }
+    h2 {
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1a1a1a;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.m-side-nav {
+    font-size: 12px;
+    line-height: 24px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    li {
+        a {
+            display: block;
+            color: #5d83a3;
+            padding: 5px 20px;
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: #e8ebee;
+            border-right: 1px solid #d8dde2;
+        }
+    }
+}

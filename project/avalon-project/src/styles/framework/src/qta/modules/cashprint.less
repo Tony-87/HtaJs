@@ -1,0 +1,100 @@
+.m-cashprint {
+    font-size: 14px;
+    padding: 10px;
+    width: 700px;
+    margin: 0 auto;
+
+    .m-list {
+        margin-bottom:10px;
+        li {
+            font-size: 14px;
+            line-height:28px;
+        }
+    }
+    .set{
+        .inline-block();
+        vertical-align:top;
+        margin-bottom:10px;
+        margin-top:5px;
+    }
+    .brief {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 17px;
+
+        .logo {
+            .float-right();
+            height: 62px;
+            overflow: hidden;
+            width: 146px;
+            margin-bottom:10px;
+        }
+        .ebrec{
+                float:left;
+                display:inline; 
+                margin:16px 0 0; 
+                padding:3px 5px; 
+                border:1px solid #000; 
+                width:330px; 
+                height:48px; 
+                font:normal 14px/24px arial; 
+                text-align:left; 
+                overflow:hidden;
+        }
+        .intro{
+            clear:both;
+            line-height:24px;
+        }
+    }
+
+    .block {
+        padding-bottom: 10px;
+    }
+    .secction{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        padding: 20px 0 10px;
+        p{
+            margin-bottom:10px;
+        }
+
+        .title {
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+
+
+    .ops {
+        .btns {
+            font-size: 0;
+            text-align: center;
+
+            .ui-btn {
+                margin-right: 10px;
+            }
+        }
+    }
+    .m-attendance table{
+        font-size:12px;
+    }
+    .m-attendance .table th{
+        background:#f8f8f8;
+        color:#333;
+    }
+    
+
+}
+
+@media print {
+    .m-cashprint {
+        width: auto;
+
+        .ops {
+            display: none;
+        }
+    }
+}

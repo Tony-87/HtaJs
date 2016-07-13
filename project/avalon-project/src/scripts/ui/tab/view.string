@@ -1,0 +1,15 @@
+<div ms-controller="tab"
+     class="ui-tab ms-controller">
+    <div class="ui-tab-left">
+        <ul class="ui-tab-set clrfix">
+            <li class="ui-tab-item"
+                ms-repeat-tab="tabs"
+                ms-class="ui-tab-active: $index == curIndex"
+                ms-click="change($index)">
+                <a class="ui-tab-handler">
+                    {{tab.text}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

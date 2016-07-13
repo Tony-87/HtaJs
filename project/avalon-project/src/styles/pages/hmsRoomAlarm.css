@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+.hmsRoomAlarm {position:fixed;width:60px;padding:5px 0;background:#f55;}
+.hmsRoomAlarm a{display:block;height:100%;color:#fff;font-size:23px;word-wrap:break-word;word-break:break-all;text-align:center;}

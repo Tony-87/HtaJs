@@ -1,0 +1,30 @@
+<div class="m-softphone" ms-controller="softphone">
+    <div class="inner">
+        <div class="group">
+            <div class="cell"><i ms-title="{{call_toolbar_status}}" class="status" ms-class="{{call_toolbar_status_class()}}"></i></div>
+            <div class="cell">
+                <button class="ui-btn" ms-attr-disabled="dis_pause" ms-class="ui-btn-primary: call_status == 'pause'" ms-class-1="ui-btn-disabled: dis_pause" ms-click="call_pause"><i class="ui-icon ui-icon-play-circle-o">&#xf01d;</i> 处理</button>
+            </div>
+            <div class="cell">
+                <button class="ui-btn" ms-attr-disabled="dis_online" ms-class="ui-btn-primary: call_status == 'online'" ms-class-1="ui-btn-disabled: dis_online" ms-click="call_online"><i class="ui-icon ui-icon-clock-o">&#xf017;</i> 等待</button>
+            </div>
+        </div>
+        <div class="group">
+            <div class="cell">
+                <input type="text" class="ui-textbox-input w100" ms-duplex="call_telnumber" ms-widget="textbox" data-textbox-placeholder="请填写电话号码"/>
+            </div>
+            <div class="cell">
+                <button class="ui-btn" ms-attr-disabled="dis_calling" ms-class="ui-btn-primary: !dis_calling" ms-class-1="ui-btn-disabled: dis_calling" ms-click="call_calling(call_telnumber)"><i class="ui-icon ui-phone">&#xf095;</i> 呼叫</button>
+            </div>
+            <div class="cell">
+                <button class="ui-btn" ms-click="call_canceled" ms-attr-disabled="dis_canceled" ms-class="ui-btn-disabled: dis_canceled" ><i class="ui-icon ui-ban">&#xf05e;</i> 取消呼叫</button>
+            </div>
+            <div class="cell">当前通话时长<br />{{duringTime}}</div>
+        </div>
+        <div class="group">
+            <div class="cell">
+                <button class="ui-btn" ms-click="call_investigation" ms-attr-disabled="dis_investigation" ms-class="ui-btn-disabled: dis_investigation">满意度调查</button>
+            </div>
+        </div>
+    </div>
+</div>
