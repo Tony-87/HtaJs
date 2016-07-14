@@ -1,0 +1,115 @@
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote, /* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea, /* form elements 表单元素 */
+th,
+td, /* table elements 表格元素 */
+img/* img elements 图片元素 */ { border:medium none; margin: 0; padding: 0; }
+strong{ font-weight:normal}
+/** 设置默认字体 **/
+html,body{ height: 100%;font:12px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif}
+body,
+button,
+input,
+select,
+textarea {font:12px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif}
+input,
+select,
+form img,
+button { vertical-align:middle; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; font-weight: normal }
+em { font-style:normal; }
+/** 重置列表元素 **/
+ul,
+ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#666666; }
+a:hover { text-decoration: underline;}
+/** 重置图片元素 **/
+img { border:none; }
+/** 重置表格元素 **/
+body  a{
+    transition:.5s all;
+    -webkit-transition:.5s all;
+    -o-transition:.5s all;
+    -ms-transition:.5s all;
+}
+
+/**------
+       margin
+        ------**/
+.m-b10{margin-bottom: 10px;}
+.m-b15{margin-bottom: 15px;}
+.m-b20{margin-bottom: 20px;}
+.m-b25{margin-bottom: 25px;}
+.m-b30{margin-bottom: 30px;}
+/** 清楚浮动 **/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+textarea, input{resize:none}
+a, textarea, input, button{outline:none}
+.clear { clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+.coz{ clear:both; overflow:hidden; zoom:1}
+.fr{ float:right !important;}
+.fl{ float:left !important;}
+.shadowS{-webkit-box-shadow:0 0 10px #cccccc; -moz-box-shadow:0 0 10px #cccccc;box-shadow:0 0 10px #cccccc;}
+.Far{ font-family: Arial!important;}
+.yahei{ font-family: "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif!important;}
+/**字号**/
+.size13{ font-size: 13px}
+.size14{ font-size: 14px}
+.size15{ font-size: 15px}
+.size16{ font-size: 16px}
+.size17{ font-size: 17px}
+.size18{ font-size: 18px}
+.size19{ font-size: 19px}
+.size19{ font-size: 19px}
+/**颜色**/
+.cl0{color:#000000}
+.cl3{color:#333333}
+.cl6{color:#666666}
+.cl9{color:#999999;}
+/**加粗**/
+.Bbold{ font-weight: bold}
+/**top**/
+.m-t3{ margin-top: 3px}
+.m-t5{ margin-top: 5px}
+.m-t10{ margin-top: 10px}
+.m-t15{ margin-top: 15px}
+.m-t20{ margin-top: 20px}
+.m-t25{ margin-top: 25px}
+.m-t30{ margin-top: 30px}
+/*行高*/
+.line-20{ line-height: 20px;}
+.line-24{ line-height: 24px;}
+.line-26{ line-height: 26px;}
+.line-27{ line-height: 28px;}
+
+/**头部**/
+.headBox{height:60px; border-bottom:1px solid #e5e5e5}

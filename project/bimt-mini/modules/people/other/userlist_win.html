@@ -1,0 +1,17 @@
+<ul class="followUlList" ms-controller="userlist_win" >
+    <li ms-repeat="data_list">
+        <div class="ListPic"><img ms-attr-src="{{el.userImg}}" > </div>
+        <div>
+            <div class="ListName"><strong>{{el.username}}</strong><i></i><span>{{el.impactnum}}</span></div>
+            <div class="ListSchool">{{el.company}}</div>
+        </div>
+        <!--<a href="javascript:;" class="followBnt"  ms-click="unfollowUser($remove,el)">已关注</a>-->
+
+
+    </li>
+
+    <a href="javascript:void(0);" ms-click="getMoreData()" class="moreList">加载更多...</a>
+ 
+</ul>
+
+
