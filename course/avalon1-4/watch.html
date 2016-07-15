@@ -9,14 +9,18 @@
             $id: "ancestor",
             aaa: '1111111111',
             click: function () {
-                avalon.log("向下广播")
+                console.log("向下广播")
                 vm1.$fire("down!aaa", "capture")
             }
         })
         vm1.$watch("aaa", function (v) {
-            avalon.log(v)
-            avalon.log("ancestor.aaa事件被触发了")
+            console.log(v)
+
+            console.log("ancestor.aaa事件被触发了")
         })
+        setTimeout(function(){
+            vm1.aaa="我是ancestor的aaa";
+        },2000)
         var vm2 = avalon.define({
             $id: "parent",
             text: "222222222",
@@ -27,8 +31,9 @@
             }
         })
         vm2.$watch("aaa", function (v) {
-            avalon.log(v)
-            avalon.log("parent.aaa事件被触发了")
+            vm2.aaa=v;
+            console.log(v)
+            console.log("parent.aaa事件被触发了")
         })
         var vm3 = avalon.define({
             $id: "son",
@@ -38,24 +43,24 @@
             }
         })
 
-
         vm3.$watch("aaa", function (v) {
-            avalon.log(v)
-            avalon.log("son.aaa事件被触发了")
+            console.log(v)
+            console.log("son.aaa事件被触发了")
         })
     </script>
 </head>
 <body class="ms-controller" ms-controller="ancestor">
+ancestor: {{aaa}}
 <h3>avalon vm.$fire的升级版 </h3>
-<button type="button" ms-click="click">
-    capture
-</button>
+
+<button type="button" ms-click="click"> capture</button>
 <div ms-controller="parent">
+
+    parent:{{aaa}}
     <button type="button" ms-click="click">broadcast</button>
     <div ms-controller="son">
-        <button type="button" ms-click="click">
-            bubble
-        </button>
+        son:{{aaa}}
+        <button type="button" ms-click="click"> bubble</button>
     </div>
 </div>
 </body>

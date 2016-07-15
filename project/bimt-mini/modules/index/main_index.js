@@ -20,7 +20,10 @@ require(["domReady", "base"], function () {
             model.m_content = "index_content";
             model.m_list = "index_list";
         });
-
+    setTimeout(function(){
+        console.log(999999999999);
+        model.content="我变了"
+    },2000)
     avalon.scan()
 
     //加载默认数据
@@ -34,6 +37,7 @@ require(["domReady", "base"], function () {
     function load_list() {
 
     }
+
 
 
 });
