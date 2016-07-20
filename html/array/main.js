@@ -5,7 +5,7 @@ require.config({//第一块，配置
         validform: 'js/jquery/Validform_v5.3.2_min',
         jqform: 'js/jquery/jquery.form',
         //avalon: "js/avalon/avalon-2.10",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
-        avalon: "js/avalon/avalon-1.46",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
+        avalon: "js/avalon/avalon.shim",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
         text: 'js/require/text',
         domReady: 'js/require/domReady',
         css: 'js/require/css'

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>夺宝分析</title>
+    <script src="../../js/jquery/jquery-1.7.2.min.js"></script>
+    <script src="../../js/avalon/avalon.js"></script>
+    <script>
+        var model = avalon.define({
+            $id: "root",
+            qihao: 307202877,
+            user_list: [],
+            analysis:function(){
+                var url = 'http://1.163.com/record/getDuobaoRecord.do';
+                url+='?gid=510&period='+model.qihao;
+                url+='&totalCnt=16000&pageSize=100&pageNum=1';
+               
+                $.getScript(url,function (data) {
+                    console.log(arguments.length);
+                    console.log(arguments[0]);
+                    console.log(arguments[1]);
+                    console.log(arguments[2]);
+console.log(JSON.stringify(arguments[2]));
+
+                });
+            },
+            loadComment: function (el) {
+                $("#comment_" + el.id).text("我是评论,属于ID:" + el.id);
+            }
+        })
+    </script>
+</head>
+<body ms-controller="root">
+<div>
+    期号：<input type="text" id="txtNo" ms-duplex="@qihao">
+    <input type="button" value="分析" ms-click="@analysis()"/>
+
+</div>
+</body>
+</html>
