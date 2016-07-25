@@ -3,3 +3,7 @@
  */
 
 
+function getAvator()
+{
+    return "baseAvator";
+}

@@ -2,6 +2,6 @@
 //console.log("Hello Webpack");
 
 
-require(["./module3"],function(){
+require(["./module3.js"],function(){
 	console.log("Hello Webpack");
 });
