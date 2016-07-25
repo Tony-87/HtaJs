@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>简单示例</title>
+</head>
+<body>
+    <div ng-controller="CommonController">
+        <div ng-controller="Controller1">
+            <p>{{greeting.text}},Angular</p>
+            <button ng-click="test1()">test1</button>
+        </div>
+        <div ng-controller="Controller2">
+            <p>{{greeting.text}},Angular</p>
+            <button ng-click="test2()">test2</button>
+            <button ng-click="commonFn()">通用</button>
+        </div>
+    </div>
+</body>
+
+<script src="../../js/angular-1.2.9.min.js"></script>
+<script src="HelloAngular_MVC.js"></script>
+</html>
