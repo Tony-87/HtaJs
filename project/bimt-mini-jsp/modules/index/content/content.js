@@ -7,5 +7,5 @@ define(["avalon", "text!./content.html", "jquery", "base"], function (avalon, in
 
     });
 
-
+    vm_lc.$watch(avalon.vmodels.)
 })
