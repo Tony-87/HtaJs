@@ -39,7 +39,7 @@
 			deps : ['jquery', 'avalon'], //base依赖jquery,avalon,只引用一个就都有了
 			exports : "base"
 		}
-	} 
+	}  
 })
 
  
