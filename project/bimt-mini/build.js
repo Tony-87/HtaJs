@@ -1,4 +1,5 @@
 ({
+	//node r.js -o build.js
 	appDir :   './', //项目根目录   bimt-mini
 	dir :   './bimtpack', //输出目录，全部文件打包后要放入的文件夹（如果没有会自动新建的） bimt-mini/bimtpack
 
