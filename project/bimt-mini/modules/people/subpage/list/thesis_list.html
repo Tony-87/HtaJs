@@ -1,0 +1,20 @@
+<div class="my-main" ms-controller="thesis_list">
+    <h2><strong >{{moduleTitle}}</strong><a ms-visible="!showpage"  ms-attr-href="{{morelink}}">查看全部>></a></h2>
+    <div class="mianbox">
+        <div class="nuberBox">
+            <span style=" margin-top: -9px;"><b class="s18">{{result.allPublishThesisNum}}</b><br/><em>发表数量</em></span>
+
+        </div>
+        <!---1-->
+        <div class="my-list" ms-repeat="data_list">
+            <a href="javascript:void(0);" class="deleteBnt" ms-visible="result.isOwner==1" ms-click="remove($remove,el)">X</a>
+
+        </div>
+        <!---1-->
+
+        <!--page-->
+        <div ms-widget="pager,thesis_list_page" ms-visible="showpage" ></div>
+        <!--// page-->
+
+    </div>
+</div>

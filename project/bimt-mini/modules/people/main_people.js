@@ -5,27 +5,25 @@ require(["domReady", 'base'], function () {//第二块，添加根VM（处理共
         people_content: '我是主页内容',
 
         m_header: '',
-        m_list: ''
+        m_content: '',
+        m_list: '',
+        content_render: function () {
+            console.log("people content render1"+new Date());
+        }
 
     })
 
     //第三块，加载其他模块
     require(['modules/common/header.js',
-            'modules/people/list/thesis_list.js'],
+            'modules/people/subpage/people_all.js'],
         function () {
+            setTimeout(function(){
+
+            },1000)
             model.m_header = "header";
-            model.m_content = "index_content";
-            model.m_list = "index_list";
+            model.m_content = "people_all";
         });
 
-    require([GLOBAL.moduleDir + 'modules/common/head.js',
-        GLOBAL.moduleDir + 'modules/people/people_head.js',
-        GLOBAL.moduleDir + 'modules/people/people_nav.js'
-    ], function () {
-        avalon.vmodels.people_root.header = "header"
-        avalon.vmodels.people_root.people_head = "people_head"
-        avalon.vmodels.people_root.people_nav = "people_nav";
-    });
 
     avalon.scan()
 

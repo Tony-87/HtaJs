@@ -11,7 +11,7 @@
     <link rel="stylesheet"  href="css/base.css" type="text/css" />
     <link rel="stylesheet"  href="css/myStyle.css" type="text/css" />
     <meta name="viewport" content="width=device-width">
-    <script src="js/require/require.js"></script>
+    <script src="vendor/require/require.js"></script>
     <script type="text/javascript">
         require(['vendor/bimt/main.js', 'modules/people/main_people.js']);
     </script>
@@ -22,9 +22,20 @@
 <div ms-include-src="m_header" data-include-replace="true"></div>
 <!--head end-->
 
+<!--head-->
+<div ms-include-src="m_content" data-include-replace="true" data-include-rendered="content_render"></div>
+<!--head end-->
+
+
+
 <!--top-->
 <div ms-include-src="m_list" data-include-replace="true"></div>
 <!--top end-->
+
+<!--footer-->
+<div ms-include-src="'modules/common/footer.html'" data-include-replace="true" data-include-rendered="footer_render"></div>
+<!--footer end-->
+
 
 
 </body>
