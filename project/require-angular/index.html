@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="test">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>avalon 工程化实践</title>
+
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript">
+        require("js/main.js",function(){
+            require("test");
+        })
+    </script>
+</head>
+<body  ng-controller="PhoneListCtrl">
+<ul>
+    <li ng-repeat="phone in phones">
+        {{phone.name}}
+        <p>{{phone.snippet}}</p>
+    </li>
+</ul>
+
+</body>
+</html>
