@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/jquery/jquery-1.7.2.min.js"></script>
+
+    <script>
+
+          var str = '{"id":4,"name":"name"}';
+          var obj = JSON.parse(str);
+          var json=JSON.parse(JSON.stringify(obj));
+          document.write(obj.name);
+
+    </script>
+
+
+</head>
+<body>
+<input type="text" name="firstName" placeholder="姓名"/>
+</body>
+
+
+<script>
+    if( !('placeholder' in document.createElement('input')) ){
+
+        $('input[placeholder],textarea[placeholder]').each(function(){
+            var that = $(this),
+                    text= that.attr('placeholder');
+            if(that.val()===""){
+                that.val(text).addClass('placeholder');
+            }
+            that.focus(function(){
+                        if(that.val()===text){
+                            that.val("").removeClass('placeholder');
+                        }
+                    })
+                    .blur(function(){
+                        if(that.val()===""){
+                            that.val(text).addClass('placeholder');
+                        }
+                    })
+                    .closest('form').submit(function(){
+                if(that.val() === text){
+                    that.val('');
+                }
+            });
+        });
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+    <style>
+        .content {
+            height: 300px;
+            border: solid 1px #FFEEC2;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+<div class="content">
+    内容
+</div>
+</body>
+
+<script>
+    //滚动加载更多
+    $(window).scroll(function (type) {
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        console.log(scrollTop + windowHeight );
+        console.log(scrollHeight);
+        if (scrollTop + windowHeight == scrollHeight) {
+            alert("到页面底部了，加载新数据");
+
+        }
+        else {
+
+
+        }
+    });
+
+</script>
+</html>

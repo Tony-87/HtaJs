@@ -6,7 +6,9 @@ require(["domReady", "base"], function () {
         m_header: '',
         m_content: '',//m 开头的都是模块，include进来的
         m_list: '',
-
+        index_render:function(){
+            console.log("index render 1");  
+        },
         load_content: load_content,
         load_list: load_list
 

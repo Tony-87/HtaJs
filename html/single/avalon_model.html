@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../js/avalon/avalon.shim.js"></script>
+
+    <script>
+        var model = avalon.define({
+            $id: "people_root",
+            result: {}
+        })
+        var model2 = avalon.define({
+            $id: "people_all",
+            result: {}
+        })
+        var model3 = avalon.define({
+            $id: "people_thesis",
+            result: {}
+        })
+
+        model.result={data_list:[1,2,3,4,56]};
+        model2.result=model.result;
+
+
+        setTimeout(function(){
+            model2.result={data_list:[4,5]};
+        },2000)
+    </script>
+</head>
+<body ms-controller="people_root">
+
+{{result.data_list.length}}
+
+<div ms-controller="people_all">
+    {{result.data_list.length}}
+</div>
+<div ms-controller="people_thesis">
+    {{result.data_list.length}}
+</div>
+
+</body>
+</html>

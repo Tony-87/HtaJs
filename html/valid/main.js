@@ -5,7 +5,7 @@ require.config({//第一块，配置
         validform: 'js/jquery/Validform_v5.3.2_min',
         jqform: 'js/jquery/jquery.form',
         //avalon: "js/avalon/avalon-2.10",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
-        avalon: "js/avalon/avalon-1.46",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
+        avalon: "js/avalon/avalon.shim",//必须修改源码，禁用自带加载器，或直接删提AMD加载器模块
         text: 'js/require/text',
         domReady: 'js/require/domReady',
         css: 'js/require/css'
@@ -35,6 +35,8 @@ require(['avalon', "domReady", "jquery", "validform", "jqform"], function () {//
                 getPageC(avalon.vmodels.c2, undefined, 22, "c2_page")
         },
         submitForm: function (e) {
+            var modelForm=  $("#form2").Validform({tiptype:2});
+
             console.log("======jquery form submitForm======");
             if (modelForm.check())
             {
@@ -49,18 +51,6 @@ require(['avalon', "domReady", "jquery", "validform", "jqform"], function () {//
         }
     })
 
-
-   if ($("#form2").length > 0) {
-    var modelForm=  $("#form2").Validform({
-            btnSubmit:"#btnSub",
-        ajaxPost:true,
-        beforeSubmit:function(curform){
-            return;
-//在验证成功后，表单提交前执行的函数，curform参数是当前表单对象。
-//这里明确return false的话表单将不会提交;
-       }
-        });
-    }
 
 
     avalon.scan(document.body);

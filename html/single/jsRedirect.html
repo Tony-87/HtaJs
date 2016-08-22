@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试JS跳转页面</title>
+	<script type="text/javascript">
+		function main_fun() {
+			// body...
+			fun1();
+			fun2();
+		}
+
+		function gettoken() {
+			// body...
+			location.href="http://www.baidu.com"
+			return;
+		}
+		function fun1() {
+			// body...
+			var token=gettoken();
+			alert(1);
+		}
+		function fun2() {
+			// body...
+			var token=gettoken();
+
+			alert(2);
+		}
+		main_fun();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
