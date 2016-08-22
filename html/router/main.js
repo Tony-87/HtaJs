@@ -58,24 +58,15 @@ require(['avalon', "domReady", "mmRouter", "domReady"], function () {//第二块
         model.query = this.query
         model.args = "[" + [].slice.call(arguments, 0) + "]"
 
-        model.params["lname"] = model.params["lname"] == undefined ? "i" : model.params["lname"];
-        model.params["ptype"] = model.params["ptype"] == undefined ? "all" : model.params["ptype"];
-        model.params["page"] = model.params["page"] == undefined ? "1" : model.params["page"];
+        // model.params["lname"] = model.params["lname"] == undefined ? "i" : model.params["lname"];
+        // model.params["ptype"] = model.params["ptype"] == undefined ? "all" : model.params["ptype"];
+        // model.params["page"] = model.params["page"] == undefined ? "1" : model.params["page"];
 
-        if (avalon.vmodels.people_nav) {
-            avalon.vmodels.people_nav.activeNode = model.params["ptype"]; //设置导航高亮
+        if(model.params["ptype"]!=undefined)
+        {
+            loadTemplate(model.params["ptype"]);
         }
-        var lname = model.params["lname"];
-
-        var pagepath = "" + model.params["ptype"];
-
-        require(['router1.js'], function () {
-            avalon.vmodels.page = "people_root";
-        });
-
-        console.log(model.path);
-        console.log(JSON.stringify(model.params));
-
+        
     }
 
     //要监控的路由

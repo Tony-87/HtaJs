@@ -11,7 +11,7 @@
 			name : 'modules/index/main_index'
 		}, {
 			name : 'modules/people/main_people'
-		}
+ }
 		//说白了就是各页面的入口文件，相对baseUrl的路径，也是省略后缀“.js”
 	],
 

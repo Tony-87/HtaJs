@@ -5,4 +5,5 @@ define(["avalon", "text!./header.html"], function(avalon, header) {
         moduleTitle:"我是页头"
     })
 
+  
 })
