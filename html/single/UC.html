@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .video_container {
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -250px 0 0 -300px;
+            border: solid 1px #F00;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--视频窗口-->
+<div id="targetDiv" class="video_container">
+
+    <ul>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+        <li>55555555555555555555555555555</li>
+
+    </ul>
+
+    <p>段落</p>
+    <p>段落</p>
+    <p>段落</p>
+</div>
+
+
+<script>
+
+    var targetDiv= document.getElementById("targetDiv");
+
+    //鼠标移入
+    targetDiv.onmouseenter=function(){
+        var toolP = document.getElementById("toolParent");
+        if (toolP == null) {
+            addTool();
+        }
+        else {
+            document.getElementById("toolParent").style.display="block";
+        }
+    }
+    //鼠标移出
+    targetDiv.onmouseleave=function(){
+        var toolP = document.getElementById("toolParent");
+        if (toolP != null) {
+            document.getElementById("toolParent").style.display="none";
+        }
+    }
+
+
+    function addTool(){
+
+        var toolParent = document.createElement("div");//工具条容器
+        toolParent.id = "toolParent";
+        toolParent.style.position = "relative";
+
+        var tool = document.createElement("div");//工具条
+        tool.style.position = "absolute";
+        tool.style.width = "200px";
+        tool.style.height = "30px";
+        tool.style.border = " solid 1px #00F";
+        tool.style.top = "-32px";
+        tool.style.right = "-1px";
+
+        var textnode = document.createTextNode("我是工具条")//工具条内容
+        tool.appendChild(textnode)
+
+        toolParent.appendChild(tool);
+
+        targetDiv.insertBefore(toolParent, targetDiv.childNodes[0])
+    }
+
+</script>
+</body>
+</html>
