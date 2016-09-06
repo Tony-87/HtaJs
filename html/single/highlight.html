@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代码高亮显示</title>
+    <style>
+        .keyword{color: red;font-weight: bold }
+    </style>
+    <script type="text/javascript" >
+        function key(){
+            var ym=document.getElementById('ss').innerHTML;//ss是要高亮的区域，div的id值
+            var keyword="代码";
+            var reg=new RegExp("/"+keyword+"/g")
+            document.getElementById('ss').innerHTML=ym.replace(eval("/"+keyword+"/g"), "<span class=keyword>"+keyword+"</span>");
+        }
+    </script>
+</head>
+<body onload="key()">
+
+<div id="ss">
+    看完前面这段代码，应该就明白了，这是利用js的替换来吧关键代码字替换成带css格式的字代码符keyword
+</div>
+
+</body>
+</html>

@@ -19,6 +19,20 @@
         console.log(000);
         console.log(4654646246546);
         console.log(4654654654654);
+
+
+
+        var len = 0;
+        var v = "abc一三";
+        for(i=0;i<v.length;i++)  {
+            if(v.charCodeAt(i)>256)  {
+                len += 2;
+            } else {
+                len++;
+            }
+        }
+        console.log(len);
+
     </script>
 </head>
 <body >
