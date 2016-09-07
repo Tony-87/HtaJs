@@ -5,14 +5,17 @@
     <title>A里嵌入图片</title>
     <style>
 
-        .online_office{width:700px; height:200px;  border: solid 1px #F00;line-height: 0;overflow: hidden;display: table;vertical-align: middle;}
-        .online_office a{border: solid 1px #00F;height:30px; display: block;display: table-row;vertical-align: middle;border: solid 1px #0F0; }
-        .online_office a img{display: table-cell;vertical-align: middle;border: solid 1px #F00;}
-        table{border: solid 1px #F00;width:700px;height:300px; }
+        .online_office{width:500px; height:200px;  border: solid 1px #F00;line-height: 0;overflow: hidden;display: table;vertical-align: bottom;}
+        .online_office a{border: solid 1px #00F;height:30px; display: block;display: table-row;vertical-align: bottom;border: solid 1px #0F0; }
+        .online_office a img{display: table-cell;vertical-align: bottom;border: solid 1px #F00;}
+
+        table{border: solid 1px #F00;width:500px;height:200px;border-collapse: collapse; }
         tr{border: solid 1px #FF0;}
         td{border: solid 1px #F0F;}
 
-
+        .table{display: table;border: solid 1px #F00;width:500px;height:200px;}
+        .row{display: table-row; }
+        .cell{display: table-cell; vertical-align: middle;}
     </style>
 </head>
 <body>
@@ -22,9 +25,8 @@
     <a href=""><img src="../../images/btn_shengao.png" alt=""></a>
     <a href=""><img src="../../images/btn_tougao.png" alt=""></a>
 </div>
-<div style="border: solid 1px #F00;">dd</div>
-<a href="" style="border: solid 1px #F00;">d</a>
-<table>
+<hr>
+<table >
     <tr>
         <td>11</td>
 
@@ -42,5 +44,21 @@
 
     </tr>
 </table>
+
+<hr>
+<div class="table">
+    <div class="row">
+        <div class="cell"><img src="../../images/btn_bianji.png" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="cell"><img src="../../images/btn_bianji.png" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="cell"><img src="../../images/btn_bianji.png" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="cell"><img src="../../images/btn_bianji.png" alt=""></div>
+    </div>
+</div>
 </body>
 </html>

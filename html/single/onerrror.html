@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script onerror</title>
+
+    <script>
+        function test()
+        {
+            alert(12);
+        }
+       var s= document.createElement("script");
+        s.onerror=test;
+        s.src="../../js/jquery/jquery-1.7.22.min.js";
+        document.head.appendChild(s);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
