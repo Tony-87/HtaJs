@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/jquery/jquery-1.7.2.min.js"></script>
+    <style>
+        .container{margin: 300px;}
+        .div1{width:20px;height:300px;background-color: #F00;}
+        .pentagonp5 {
+            transition: transform linear 0.5s;
+            -webkit-transition: transform linear 0.5s;
+            -moz-transition: transform linear 0.5s;
+            -o-transition: transform linear 0.5s;
+            -ms-transition: transform linear 0.5s;
+            -webkit-transform: rotate(72deg);
+            -moz-transform: rotate(72deg);
+            -o-transform: rotate(72deg);
+            -ms-transform: rotate(72deg);
+        }
+    </style>
+    <script>
+        function setRotate(){
+            $(".div1").css("transform","rotate(90deg)");
+        }
+    </script>
+</head>
+<body>
+<div>
+    <a href="javascript:setRotate()">设置旋转度</a>
+</div>
+<div class="container">
+<div class="div1 pentagonp5">
+
+</div>
+</div>
+</body>
+</html>

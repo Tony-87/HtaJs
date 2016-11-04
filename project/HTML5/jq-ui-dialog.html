@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>position demo</title>
+    <link rel="stylesheet" href="../../lib/jquery-ui-1.12.1/jquery-ui.min.css">
+    <style>
+        .custom-red { background: #00a3d2; }
+        .custom-red .ui-dialog-titlebar{background-color: #000000;color:#FFF;height:60px;}
+    </style>
+    <script src="../../lib/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script src="../../lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<div style="height:1200px;border:solid 1px #F00;">
+
+</div>
+
+<div class="win">
+    abc
+</div>
+
+<script>
+
+    $( ".win" ).dialog({
+    title: "支付8.88元",
+    modal:true,
+    width:477,
+    height:416,
+    classes: {
+        "ui-dialog": "custom-red"
+    }
+
+});
+    //$( "<div>Big and red</div>" ).dialog();
+</script>
+
+</body>
+</html>

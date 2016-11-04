@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        .keyword{color:#F00;}
+    </style>
+    <script>
+        $(document).ready(function (){
+            function SearchHighlight3(idVal,keyword)
+            {
+                repKeyword($(idVal).find("h2 a"),keyword);
+
+                $(idVal).find("div strong").each(function(){
+                    repKeyword($(this),keyword);
+                })
+                $(idVal).find("div span").each(function(){
+                    repKeyword($(this),keyword);
+                })
+                $(idVal).find("p").each(function(){
+                    repKeyword($(this),keyword);
+                })
+
+            }
+
+            function repKeyword(el_id,keyword)
+            {
+                $(el_id).html($(el_id).text().replace(eval("/"+keyword+"/g"), "<b class=keyword>"+keyword+"</b>"))
+            }
+
+
+            $("li").each(function(){
+                SearchHighlight3($(this),"s");
+            })
+
+        })
+    </script>
+</head>
+<body>
+<ul>
+    <li>
+        <h2><a href="">标题一ds标题一ds</a></h2>
+        <div>
+            <strong>作者名1sd</strong><strong>作者名2sd</strong>
+            <span>期刊s1d</span><span>期刊2sd</span>
+        </div>
+        <p>
+            <span>内容一sd</span>
+            <span>内容二sd</span>
+        </p>
+
+        <p>
+        <span>内容三sd</span>
+        <span>内容四sd</span>
+        </p>
+    </li>
+    <li>
+        <h2><a href="">标题一d标题一sd</a></h2>
+        <div>
+            <strong>作者名1sd</strong><strong>作者名2sd</strong>
+            <span>期刊1sd</span><span>期刊s2d</span>
+        </div>
+        <p>
+            <span>内容s一d</span>
+            <span>内容s二d</span>
+        </p>
+
+        <p>
+            <span>内容s三d</span>
+            <span>内容s四d</span>
+        </p>
+    </li>
+
+</ul>
+</body>
+</html>

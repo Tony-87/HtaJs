@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #total{width:500px; height:39px; line-height:40px; margin:80px auto 20px auto; font-size:20px}
+        #total .t_num{ display:inline-block; margin:2px 4px 0 4px;}
+        #total .t_num i{width:32px;height:39px; display:inline-block; background: url(number.png) no-repeat; background-position:0 0; text-indent:-999em}
+    </style>
+    <script src="../../js/jquery/jquery-1.7.2.min.js"></script>
+    <script src="http://www.helloweba.com/demo/totalnum/animateBackground-plugin.js"></script>
+
+</head>
+<body>
+<div id="total">
+    下载量：<span class="t_num" id="myTargetElement"></span>次
+    <br>
+    下载量：<span class="t_num" id="myTargetElement2"></span>次<br>
+    下载量：<span class="t_num" id="myTargetElement3"></span>次
+</div>
+<script>
+
+    function show_num(elObj,n){
+        var it = $("#"+elObj+" i");
+        var len = String(n).length;
+        for(var i=0;i<len;i++){
+            if(it.length<=i){
+                $("#"+elObj).append("<i></i>");
+            }
+            var num=String(n).charAt(i);
+            var y = -parseInt(num)*39;
+            var obj = $("#"+elObj+" i").eq(i);
+            obj.animate({
+                        backgroundPosition :'(0 '+String(y)+'px)'
+                    }, 'slow','swing',function(){}
+            );
+        }
+        $("#cur_num").val(n);
+    }
+
+    show_num("myTargetElement",123456789);
+    show_num("myTargetElement2",99999);
+    show_num("myTargetElement3",549879);
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .parent {
+            height: 200px;
+            border: solid 1px #F00;
+            line-height: 200px;
+        }
+
+        h1 {
+            border: solid 1px #0F0;
+            margin: 0;
+        }
+
+        .follow {
+            border: solid 1px #0F0;
+            height: 30px;
+            margin-top: 30px;
+        }
+
+        .eye:before {
+            content: '>';
+        }
+
+        .follow ~ .eye {
+
+            width: 20px;
+            height: 20px;
+            background-color: #F00;
+            border: solid 1px #F00;
+        }
+
+        #triangle {
+            width: 100px;
+            height: 100px;
+            border-top: 100px solid #FF00FF;
+            border-bottom: 100px solid #F00;
+            border-left: 100px solid #00F;
+            border-right: 100px solid #0F0;
+        }
+
+        .tri {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid red;
+        }
+
+        .tri:after, .tri:before {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid red;
+        }
+
+        .tri:before {
+            transform: rotate(70deg);
+        }
+
+        .tri:after {
+            transform: rotate(-70deg);
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="parent kk">
+    <h1>这是标题</h1>
+</div>
+
+<div class="follow">
+    a
+</div>
+
+<div class="tri">a</div>
+<hr>
+
+<div style="word-break:keep-all;white-space:nowrap;width:100px;border: solid 1px #F00;">一二三四五六七八九十</div>
+<div style="word-break:break-all;width:100px;border: solid 1px #F00;">一二三四五六七八九十</div>
+
+<hr>
+<style>
+    .child_float div{border:solid 1px #F00;width:100px;}
+</style>
+<div class="child_float">
+<div style="float:left;">
+    A
+    <div>A1</div>
+    <div>A2</div>
+</div>
+
+<div  style="float:left;">
+    B
+    <div>B1</div>
+    <div>B2</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<style type="text/css">
+    .div1{background:#000080;border:1px solid red;}
+    .div2{background:#800080;border:1px solid red;height:50px;margin-top:10px}
+    .left{float:left;width:20%;height:200px;background:#DDD}
+    .right{float:right;width:30%;height:80px;background:#DDD}
+    /*清除浮动代码*/
+    .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;}
+    .clearfloat{zoom:1}
+
+    .div3{background-color: #5f6a72;height:200px;overflow: hidden;}
+    .div4{background-color: #4EC5AC;width:50%;margin-top: 100px;}
+</style>
+<div class="div1 clearfloat">
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+</div>
+<div class="div2">
+    div2
+</div>
+<div class="div3">
+    <div class="div4">a</div>
+</div>

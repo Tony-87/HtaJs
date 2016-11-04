@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 回答问题注册 */
+        .question-panel{ padding:0.3rem 0.15rem;   }
+
+        .question-panel em{color:#F00;font-size:0.18rem; font-weight:bold; }
+        .question-panel .intro{ font-size:0.16rem;color:#666666; line-height:0.28rem;}
+        .question-panel .errorinfo{ font-size:0.16rem;color:#666666; line-height:0.28rem;text-align: center;}
+        .question-panel .errorinfo em{margin:0 0.05rem;}
+        .question-panel .question-content{padding:0.04rem 0.1rem; background-color:#FFF;   border-radius:0.02rem; margin-top:0.3rem; }
+        .question-panel .question-content label{margin-left: 0.03rem;}
+        .question-panel .question-content div{ color:#333333; margin-top:0.05rem; }
+
+        .question-panel .question-content li{color:#666666; font-size:0.16rem;height:0.35rem;line-height: 0.35rem; overflow:hidden;   }
+        .question-panel .button-panel{width:50%;margin:0.4rem auto;}
+        .question-panel .button-panel input{width:100%; background-color:#4EC5AC; color:#FFF;font-size:0.16rem; border-radius:0.02rem;height:0.3rem;}
+        .cssradio{	-webkit-appearance: none;	-moz-appearance: none;display: inline-block; margin-top: -0.03rem;	vertical-align: middle;	width:0.17rem;	height:0.17rem;	background-color: #FFFFFF;	border: 0.01rem solid #cacece;	border-radius: 100%;}
+        .cssradio:checked  {	background-color: #4EC5AC;	box-shadow: 0 0 0 0.03rem #FFF inset;}
+
+
+        .moni_chk{-webkit-appearance: none;-moz-appearance: none;display: inline-block; margin-top:3px;	vertical-align: middle;	width:30px;	height:30px;	background-color: #FFFFFF;	border:1px solid #cacece;	border-radius: 100%;
+      outline: none;;
+        }
+        .moni_chk:active  { outline: none;}
+        .moni_chk:visited { outline: none;}
+        .moni_chk:checked  {	background-color: #4EC5AC;	box-shadow: 0 0 0 3px #FFF inset;outline: none;}
+    </style>
+</head>
+<body>
+
+<div>
+    <input class="moni_chk" type="checkbox" id="chk_1" value="1" name="chk_1"><label for="chk_1">选项一</label>
+    <input class="moni_chk" type="checkbox" id="chk_2" value="2" name="chk_2"><label for="chk_2">选项二</label>
+</div>
+</body>
+</html>
