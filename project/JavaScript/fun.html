@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //对象数组排序
+        function keysrt(key,desc) {
+            return function(a,b){
+                return desc ? ~~(a[key] < b[key]) : ~~(a[key] > b[key]);
+            }
+        }
+        function keysort(key,desc) {
+            return function(a,b){
+                return desc ? ~~(a[key] < b[key]) : ~~(a[key] > b[key]);
+            }
+        }
+
+        var ary=[{id:1,name:"a"},{id:2,name:"b"}];
+        console.log(JSON.stringify(ary));
+        ary.sort(keysrt('name',true));
+        console.log(JSON.stringify(ary));
+        ary.sort(keysrt('name',false));
+        console.log(JSON.stringify(ary));
+        ary.sort(keysrt('id',false));
+        console.log(JSON.stringify(ary));
+        ary.sort(keysrt('id',true));
+        console.log(JSON.stringify(ary));
+
+
+        var numArr=[[2,"b"],[1,"a"],[3,"c"]];
+        console.log(JSON.stringify(numArr));
+        numArr.sort(keysort(0,true));
+        console.log(JSON.stringify(numArr));
+        numArr.sort(keysort(0,false));
+        console.log(JSON.stringify(numArr));
+        numArr.sort(keysort(1,true));
+        console.log(JSON.stringify(numArr));
+        numArr.sort(keysort(1,false));
+        console.log(JSON.stringify(numArr));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
