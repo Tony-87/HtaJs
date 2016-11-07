@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // Person类
+        function Person(name) {
+            this.name = name;
+        }
+        // 原型方法
+        Person.prototype.sayHello = function () {
+            Person.sayHello(this);
+        }
+        // 静态方法
+        Person.sayHello = function (p) {
+            console.log((p.name + ', hello !'));
+        }
+        // Person实例对象
+        var tom = new Person('Tom');
+        tom.sayHello();
+
+        var jerry = new Person('Jerry')
+        jerry.sayHello();
+
+
+        a = 1, b = undefined, c = 3;
+        a = a || b || c;
+
+        console.log(a);
+
+        var b = navigator.userAgent.toLowerCase();
+
+        // Figure out what browser is being used
+        var jQuery = {};
+        jQuery.browser = {
+            safari: /webkit/.test(b),
+            opera: /opera/.test(b),
+            msie: /msie/.test(b) && !/opera/.test(b),
+            mozilla: /mozilla/.test(b) && !/compatible/.test(b)
+        };
+
+        // Check to see if the W3C box model is being used
+        jQuery.boxModel = !jQuery.browser.msie || document.compatMode == "CSS1Compat";
+
+
+        var f=function () {
+
+        };
+        var arr=new Array();
+        console.log(f.constructor=="function");
+        console.log(arr.constructor=="function");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
