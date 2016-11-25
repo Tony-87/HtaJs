@@ -38,6 +38,13 @@
         console.log(JSON.stringify(numArr));
         numArr.sort(keysort(1,false));
         console.log(JSON.stringify(numArr));
+
+       //{A:[],C:[],B:[]} -> {A:[],B:[],C:[]}
+
+        var o1={A:[1],C:[3],B:[2]};
+        console.log(JSON.stringify(o1));
+        o1=o1.prototype(keysrt(0,true));
+        console.log(JSON.stringify(o1));
     </script>
 </head>
 <body>

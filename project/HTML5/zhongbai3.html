@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clock-box {
+            width:300px;
+            height:300px;
+            margin:100px auto;
+            border:1px solid #00ff90;
+        }
+
+        .clock {
+            width: 2px;
+            height: 100px;
+            background: #000000;
+            margin: 30px auto;
+            position: relative;
+        }
+        .clock::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: -9px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: #ff0000;
+        }
+
+        .clock2 {
+            width: 2px;
+            height: 100px;
+            background: #000000;
+            margin: 30px auto;
+            position: relative;
+        }
+        .clock2::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: -9px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: #ff0000;
+        }
+
+        .clock3 {
+            width: 2px;
+            height: 100px;
+            background: #000000;
+            margin: 30px auto;
+            position: relative;
+        }
+        .clock3::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: -9px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: #ff0000;
+        }
+
+        .clock {
+            -webkit-animation: go 0.5s ease  alternate infinite;
+            -moz-animation: go 0.5s ease  alternate infinite;
+            animation: go 0.5s ease  alternate infinite;
+        }
+        @keyframes go {
+            0% {
+                -webkit-transform: rotate(15deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(15deg);
+                -moz-transform-origin: top center;
+                transform: rotate(15deg);
+                transform-origin: top center;
+            }
+
+            100% {
+                -webkit-transform: rotate(-15deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(-15deg);
+                -moz-transform-origin: top center;
+                transform: rotate(-15deg);
+                transform-origin: top center;
+            }
+        }
+        .clock2 {
+            -webkit-animation: go2 0.5s ease  alternate infinite;
+            -moz-animation: go2 0.5s ease  alternate infinite;
+            animation: go2 0.5s ease  alternate infinite;
+        }
+        @keyframes go2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(0deg);
+                -moz-transform-origin: top center;
+                transform: rotate(0deg);
+                transform-origin: top center;
+            }
+            35% {
+                -webkit-transform: rotate(10deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(10deg);
+                -moz-transform-origin: top center;
+                transform: rotate(10deg);
+                transform-origin: top center;
+            }
+
+            70% {
+                -webkit-transform: rotate(-10deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(-10deg);
+                -moz-transform-origin: top center;
+                transform: rotate(-10deg);
+                transform-origin: top center;
+            }
+
+            10% {
+                -webkit-transform: rotate(0deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(0deg);
+                -moz-transform-origin: top center;
+                transform: rotate(0deg);
+                transform-origin: top center;
+            }
+        }
+        .clock3 {
+            -webkit-animation: go3 0.5s ease  alternate 2;
+            -moz-animation: go3 0.5s ease  alternate 2;
+            animation: go3 0.5s ease  alternate 2;
+        }
+        @keyframes go3 {
+            0% {
+                -webkit-transform: rotate(5deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(5deg);
+                -moz-transform-origin: top center;
+                transform: rotate(5deg);
+                transform-origin: top center;
+            }
+
+            100% {
+                -webkit-transform: rotate(-5deg);
+                -webkit-transform-origin: top center;
+                -moz-transform: rotate(-5deg);
+                -moz-transform-origin: top center;
+                transform: rotate(-5deg);
+                transform-origin: top center;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="clock-box">
+    <div id="clock" class="clock"></div>
+</div>
+
+
+<script>
+ var clock=1;
+    setTimeout(function () {
+        clock++;
+            document.getElementById("clock").className="clock"+clock;
+
+    },2000)
+</script>
+</body>
+</html>

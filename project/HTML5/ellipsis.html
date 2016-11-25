@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ellipsis-2l {
+            width:150px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;    /* 数值代表显示几行 */
+            -webkit-box-orient: vertical;
+        }
+
+        .aaa{
+            width:200px;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow : hidden;
+            -webkit-line-clamp:3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="ellipsis-2l">
+    一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+</div>
+<div class="ellipsis-2l">
+    Enhancements to our leading Ext JS framework will embrace new language features of ES2015 (formerly ES6), and adopt a modern and open toolchain.
+</div>
+
+<hr>
+
+<div class="aaa">
+    一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+</div>
+<div class="aaa">
+    Enhancements to our leading Ext JS framework will embrace new language features of ES2015 (formerly ES6), and adopt a modern and open toolchain.
+</div>
+</body>
+</html>

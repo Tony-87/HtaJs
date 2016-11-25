@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zepto</title>
+    <script>
+
+        var Zepto = {a: 1};
+        console.log('$' in window);
+        '$' in window || (window.$ = Zepto);
+        console.log(window.$);
+        console.log(" typeof 5  " + typeof 5);
+        console.log(" typeof !!5  " + typeof !!5);
+
+        var ADJ_OPS = {append: 'beforeEnd', prepend: 'afterBegin', before: 'beforeBegin', after: 'afterEnd'};
+        for (k in ADJ_OPS) {
+            console.log(k + "-" + typeof k);
+            console.log(ADJ_OPS[k]);
+        }
+
+        var tags = "<opt"
+
+        console.log(tags.indexOf("<opt"));
+        console.log(!tags.indexOf("<opt"));
+
+        console.log("!0 - "+(!0));
+        console.log("!-1 - "+(!-1));
+        /*$.fn[k] = (function(op){
+         return function(html){ return this(function(el){
+         el['insertAdjacent' + (html instanceof Element ? 'Element' : 'HTML')](op,html)
+         })};
+         })(ADJ_OPS[k]);*/
+
+
+        (function (op) {
+            console.log(op);
+        })(465)
+
+
+        console.log(void 0);
+        console.log(String.prototype.trim === void 0);
+        console.log(String.prototype.trim === undefined);
+
+        var name = "abc"
+        var reg = new RegExp("(^|\\s)" + name + "(\\s|$)")
+
+        console.log(reg.test("adf kjp iasdf abc dfka sdfk"));
+        console.log(reg.test("abc"));
+        console.log(reg.test("abc "));
+        console.log(reg.test(" abc "));
+
+        console.log( document.map );
+
+        console.log([].slice);
+
+    </script>
+</head>
+<body>
+<div>
+    <h1> 标题 </h1>
+    <p>段落一</p>
+    <p>段落二</p>
+</div>
+</body>
+</html>

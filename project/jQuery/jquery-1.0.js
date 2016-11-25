@@ -67,6 +67,7 @@ jQuery.fn = jQuery.prototype = {
     },
 
     get: function (num) {
+
         // Watch for when an array (of elements) is passed in
         if (num && num.constructor == Array) {
 

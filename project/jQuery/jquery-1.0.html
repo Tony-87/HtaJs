@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.0.js"></script>
+    <script>
+        $(function () {
+            console.log( $(".logo").length);
+            console.log(typeof($(".logo")));
+            console.log(JSON.stringify($(".logo")));
+            console.log($(".logo")[0]);
+            console.log(typeof($(".logo")[0]));
+            console.log($(".logo")[0].toString());
+            //for(var i=0;i<$(".logo"))
+            console.log($(".logo").eq(1).html());
+
+            var arr=[1,3,5,7,9];
+            console.log( $(arr).get(3));
+
+
+            var date1=new Date("2016-01-01");
+            var date2=new Date("2016-1-1");
+            var date3=new Date("2016-01-1");
+            var date4=new Date("2016-1-01");
+            console.log(date1);
+            console.log(date1.getTime());
+            console.log(date2);
+            console.log(date2.getTime());
+            console.log(date3);
+            console.log(date3.getTime());
+            console.log(date4);
+            console.log(date4.getTime());
+        })
+    </script>
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <div class="center-panel">
+        <div class="header_left fl">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="临床研究1">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="临床研究2">
+                </a>
+            </div>
+            <div class="logo_en">
+                <img src="" alt="clinical research"></div>
+            <div class="director">
+                <span>主管:中华人民共和国教育部</span>
+                <span>主办:西安交通大学</span>
+                <span>国际刊号:ISSN 2096-1278</span>
+                <span>国内刊号: CN 61-1502/R</span>
+            </div>
+        </div>
+        <div class="header_right fr">
+            <p>中国期刊全文数据库刊源期刊</p>
+            <p>中国核心期刊（遴选）数据库收录期刊</p>
+            <p>中国万方数据库全文收录期刊</p>
+        </div>
+    </div>
+</div>
+<!--header end-->
+</body>
+</html>

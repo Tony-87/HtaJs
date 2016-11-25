@@ -1,0 +1,101 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <style type="text/css">
+        @-webkit-keyframes left{
+            0%{
+                -webkit-transform:rotate(60deg);
+            }
+            50%{
+                -webkit-transform:rotate(0deg);
+            }
+            100%{
+                -webkit-transform:rotate(0deg);
+            }
+
+        }
+        @-webkit-keyframes right{
+            0%{
+                -webkit-transform:rotate(0deg);
+            }
+            50%{
+                -webkit-transform:rotate(0deg);
+            }
+            100%{
+                -webkit-transform:rotate(-60deg);
+            }
+        }
+        ul{
+            margin-top:100px;
+            margin-left: 400px;
+        }
+        li{
+            list-style: none;
+            width: 80px;
+            height: 500px;
+
+            float: left;
+        }
+
+        .line{
+            width: 10px;
+            height: 300px;
+
+            margin: 230px auto 0px auto;
+            background-color: grey;
+        }
+
+        .circle{
+            width: 80px;
+            height: 80px;
+
+            border-radius: 80px;
+            background:-webkit-repeating-radial-gradient(circle,gainsboro 0,dimgray 100%)
+        }
+        #leftBabble{
+            -webkit-transform:rotate(60deg);
+            -webkit-animation-name:left;
+            -webkit-animation-duration:1s;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-timing-function:ease-in;
+        }
+        #rightBabble{
+            -webkit-transform:rotate(0deg);
+            -webkit-animation-name:right;
+            -webkit-animation-duration:1s;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-timing-function:ease-out;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<ul>
+    <li id="leftBabble">
+        <div class="line"></div>
+        <div class="circle"></div>
+    </li>
+    <li>
+        <div class="line"></div>
+        <div class="circle"></div>
+    </li>
+    <li>
+        <div class="line"></div>
+        <div class="circle"></div>
+    </li>
+    <li id="rightBabble">
+        <div class="line"></div>
+        <div class="circle"></div>
+    </li>
+
+</ul>
+</body>
+</html>

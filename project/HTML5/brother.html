@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>兄弟选择符 (E~F)_CSS参考手册_web前端开发参考手册系列</title>
+    <style>
+        p ~ p {color: #f00;}
+        .txt-blue{color:#00F;}
+        .b-red{border: solid 1px #F00;}
+        .b-red.bt-green{border-top: solid 1px #0F0;}
+        .bb-green{border-bottom: solid 2px #0f0;}
+    </style>
+</head>
+<body>
+<div class="test">
+    <h3>这是一个标题</h3>
+    <p>这是一个文字段落</p>
+    <p>这是一个文字段落</p>
+    <h3>这是一个标题</h3>
+    <p>这是一个文字段落</p>
+    <h3>这是一个标题</h3>
+    <p>这是一个文字段落</p>
+    <p>这是一个文字段落</p>
+    <div class="txt-blue b-red bb-green">
+        <p>段落</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bt-green ">
+        <p>段落</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="txt-blue b-red bt-green">
+        <p>段落</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="b-red">
+        <p class="bt-green">段落</p>
+    </div>
+</div>
+</body>
+</html>
