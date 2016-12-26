@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;}
+        .clearfloat{zoom:1}
+li{list-style: none;}
+
+a{line-height:0; }
+img{vertical-align: bottom;}
+        .ulA{position: relative; margin:0; }
+        .ulA li{ position: absolute;}
+
+        .ulB{ padding-left: 200px;margin:0; }
+        .ulB li{ width:1px;float:left;padding:0;}
+
+        .ps{position: relative;border: solid 1px #F00;overflow: hidden;}
+        .ps a{border: solid 1px #F00;float:left;}
+    </style>
+</head>
+<body>
+
+
+<h1>这是轮播图</h1>
+
+<p>段落一</p>
+
+<ul class="  ulA">
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+</ul>
+
+<ul  class="ulB clearfloat"  >
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+    <li><a href=""><img src="../../images/banner1.jpg" alt=""></a></li>
+</ul>
+
+<p>段落二</p>
+
+
+<div class="ps clearfloat">
+    <a href=""><img src="../../images/banner1.jpg" alt=""></a>
+
+</div>
+
+<div class="clearfloat"></div>
+
+<p>段落三</p>
+</body>
+</html>

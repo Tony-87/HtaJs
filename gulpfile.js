@@ -6,10 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch',function(){
     gulp.watch('*.html',['html']);
-    gulp.watch('*/*.html',['html']);
-    gulp.watch('search/*.html',['html']);
-    gulp.watch('login/*.html',['html']);
-    gulp.watch('write/*.html',['html']);
+    gulp.watch('**/*.html',['html']);
     gulp.watch('css/*.css',['css']);
     gulp.watch('js/*.js',['js']);
 })

@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<div class="head"></div>
 
 <div id="div1" class="div1">
     <div>div1-div</div>
@@ -30,7 +31,23 @@
     console.log(document.body.scrollHeight);
     console.log(document.body.scrollWidth);
 
+    window.onscroll= function () {
+        var scrollTop = document.body.scrollTop ;
 
+        if (scrollTop >=  50) {
+            $(".head").addClass("head_hover");
+            console.log(11111111111);
+            console.log( document.getElementsByClassName("head").length)
+            console.log( document.getElementsByClassName("header-fixed").length)
+        }
+        else {
+            $(".head").removeClass("head_hover");
+            console.log(22222222222222);
+        }
+ 
+        //console.log(document.body.getBoundingClientRect());
+    }
+    
 </script>
 
 
