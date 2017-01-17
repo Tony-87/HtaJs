@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FullCalendar</title>
+    <link rel="stylesheet" href="lib/fullcalendar.min.css">
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/fullcalendar.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'title',
+                    center: 'today',
+                    right: '  prev,next'
+                },
+                //weekends:false,
+                //  hiddenDays: [ 2, 4 ],
+                customButtons: {
+                    myCustomButton: {
+                        text: 'custom!',
+                        click: function () {
+                            alert('clicked the custom button!');
+                        },
+                        icon: 'left-triangle'
+                    }
+                },
+                fixedWeekCount:false,
+                //weekNumbers:true,
+               // weekNumbersWithinDays:true,
+               /* businessHours: {
+                    // days of week. an array of zero-based day of week integers (0=Sunday)
+                    dow: [ 1, 2, 3, 4 ], // Monday - Thursday
+
+                    start: '10:00', // a start time (10am in this example)
+                    end: '18:00', // an end time (6pm in this example)
+                },*/
+               // height:400,
+             contentHeight:200,
+                footer: {
+                    left: 'today myCustomButton',
+                    center: 'today',
+                    right: '  prev,next prevYear,nextYear'
+                },
+                buttonIcons: {},
+                editable: true,
+                selectable: true,
+
+                dayClick: function (date) {
+                    console.log('dayClick', date.format());
+                },
+                select: function (startDate, endDate) {
+                    console.log('select', startDate.format(), endDate.format());
+                },
+                timezone: 'local'
+            });
+
+
+        });
+
+    </script>
+
+    <style>
+        #calendar {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="calendar"></div>
+</body>
+</html>
