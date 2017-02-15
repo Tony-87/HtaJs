@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../../js/jquery/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+
+<input type="checkbox" id="ck1" value="123" >
+<input type="checkbox" id="ck2" value="124" checked="checked">
+
+
+<a href="javascript:test()">test</a>
+
+<script>
+    function test() {
+        console.log($("#ck1").attr("checked"));
+        console.log($("#ck1").val());
+
+        console.log($("#ck2").attr("checked"));
+        console.log($("#ck2").val());
+
+    }
+</script>
+</body>
+</html>

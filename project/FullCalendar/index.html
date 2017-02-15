@@ -12,14 +12,14 @@
 
         $(document).ready(function () {
 
-            $('#calendar').fullCalendar({
+          $('#calendar').fullCalendar({
                 header: {
                     left: 'title',
-                    center: 'today',
-                    right: '  prev,next'
+                    right:null,
+                    center: '  prev,next'
                 },
                 //weekends:false,
-                //  hiddenDays: [ 2, 4 ],
+               // hiddenDays: [ 2, 4 ],
                 customButtons: {
                     myCustomButton: {
                         text: 'custom!',
@@ -29,27 +29,26 @@
                         icon: 'left-triangle'
                     }
                 },
-                fixedWeekCount:false,
-                //weekNumbers:true,
-               // weekNumbersWithinDays:true,
-               /* businessHours: {
+                fixedWeekCount:true,
+           weekNumbers:true,
+              weekNumbersWithinDays:true,
+           businessHours: {
                     // days of week. an array of zero-based day of week integers (0=Sunday)
                     dow: [ 1, 2, 3, 4 ], // Monday - Thursday
 
                     start: '10:00', // a start time (10am in this example)
                     end: '18:00', // an end time (6pm in this example)
-                },*/
-               // height:400,
-             contentHeight:200,
-                footer: {
-                    left: 'today myCustomButton',
-                    center: 'today',
-                    right: '  prev,next prevYear,nextYear'
                 },
+               // height:400,
+             contentWidth:800,
+             contentHeight:200,
+                defaultDate: '2016-12-12',
                 buttonIcons: {},
                 editable: true,
                 selectable: true,
-
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
                 dayClick: function (date) {
                     console.log('dayClick', date.format());
                 },
@@ -61,7 +60,17 @@
 
 
         });
+        $(document).ready(function() {
 
+            $('#calendar').fullCalendar({
+                defaultDate: '2016-12-12',
+                navLinks: true,
+                editable: true,
+                eventLimit: true
+
+            });
+
+        });
     </script>
 
     <style>

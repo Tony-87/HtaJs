@@ -1,0 +1,15 @@
+.container
+{
+    position: absolute;
+    top: 10%; left: 10%; right: 0; bottom: 0;
+}
+.action
+{
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+}
+.cropped>img
+{
+    margin-right: 10px;
+}
