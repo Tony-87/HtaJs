@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/jquery/jquery-1.11.1.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+
+
+
+        })
+
+
+        function selectSType(obj) {
+            console.log($(obj).val());
+
+            if($(obj).val()==2)
+            {
+                $("body").append($(obj).prop("outerHTML"));
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+
+
+
+<select name="" id="" class="stype" onchange="selectSType(this)">
+    <option value="1">证书</option>
+    <option value="2">发票</option>
+    <option value="3">其他</option>
+</select>
+
+
+
+</body>
+</html>

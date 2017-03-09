@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .div1{background:rgba(0,0,0,.2);height:100px;padding:50px; background-color: #000\9; filter:Alpha(opacity=20) }
+        .div2{border: solid 1px #F00; background-color: #62B2F5;  width:500px;}
+
+
+        #pic {
+            FLOAT: left; WIDTH: 275px; POSITION: relative; HEIGHT: 200px;border: solid 1px #F00;
+        }
+        #textbg {
+            Z-INDEX: 15; BACKGROUND: #000 ; FILTER: alpha(opacity=60); LEFT: 0px; WIDTH: 275px; POSITION: absolute; TOP: 170px; HEIGHT: 30px;
+            -moz-opacity: 0.6;border: solid 1px #F00;
+        }
+        #text {
+            FONT-WEIGHT: bold; Z-INDEX: 16; LEFT: 0px; WIDTH: 275px; COLOR: #fff; POSITION: absolute; TOP: 170px; HEIGHT: 30px; TEXT-ALIGN: center
+        }
+
+
+    </style>
+</head>
+<body style="background: url('../../images/banner.jpg')">
+
+
+<div class="div1" >
+
+    <div class="div2">
+        <input type="text">
+        <br>
+        <input type="text">
+    </div>
+
+</div>
+
+<div id="pic">
+    <div id="textbg"></div>
+    <div id="text">内容内容<div>
+</div>
+
+        <hr>
+        <div style="position: relative;">
+
+
+
+        <div style="width:300px;height:300px;background-color: #000;opacity: .4;filter: alpha(opacity:60)">
+
+        </div>
+
+            <div style="position: absolute;color:#F00;top:50px;left:30px; width:100px;height:100px;background-color: #4ec5ac;">
+                adsf
+            </div>
+    </div>
+
+
+</body>
+</html>

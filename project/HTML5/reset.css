@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+/*初始化页面所有样式 2015.4.21*/
+/*是重置浏览器的CSS默认属性。
+因为浏览器的品种很多，每个浏览器的默认样式也是不同的，比如<button>标签，在IE浏览器、Firefox浏览器以及Safari浏览器中的样式都是不同的，所以，通过重置button标签的CSS属性，然后再将它统一定义，就可以产生相同的显示效果。*/
+html {  }
+* { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, img { border:0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; }
+li { list-style:none; }
+caption, th { text-align:left; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; font-variant:normal; }
+table{table-layout: fixed;}
+/* 重置行高和选择器默认属性 */
+/*sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }*/
+input, textarea, select {font-family:"Microsoft YaHei","冬青黑体简体中文w3","Helvetica Neue";  font-size:inherit; font-weight:inherit; line-height:18px}
+/*to enable resizing for IE*/
+input, textarea, select { *font-size:100%;}
+textarea{resize:none;}
+.submit input{cursor: pointer;}
+/*because legend doesn't inherit in IE */
+legend { color:#000; }
+q:before, q:after, blockquote:before, blockquote:after { content: "."; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%;  font-family: inherit; }
+/*span{display: inline-block;}*/
+hr {height:1px;border:none;border-top:1px solid #e6e6e6;margin:0;*margin:0 0 -14px 0;float:none;*float:left;display:block;min-width:1170px;}
+/*==================layout==============*/
+body, html {font-family:"Microsoft YaHei","冬青黑体简体中文w3","Helvetica Neue"; font-size:12px;}
+/*@font-face {
+    font-family: "myFont";
+    src: url('../fonts/Hiragino Sans GB W3.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "myFont_1";
+    src: url('../fonts/方正兰亭纤黑简体.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "myFont_2";
+    src: url('../fonts/Helvetica Neue CE 75 Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}*/
+/*============== a link =============*/
+a { text-decoration:none; cursor:pointer; margin: 0 2px;  color:#555555;}
+a:link { text-decoration:none; cursor:pointer; }
+a:visited { text-decoration:none; cursor:default}
+a:hover { text-decoration:none; cursor:pointer; }
+a:active { text-decoration:none; }
+a:focus{outline:none;}
+/*============== padding and margin==============*/
+.ax-p2 { padding:2px; }
+.ax-p4 { padding:4px; }
+.ax-p12 { padding:12px; }
+.ax-m4 { margin:4px; }
+.ax-p8 { padding:8px; }
+.ax-m8 { margin:8px; }
+.ax-m-0 { margin:0; }
+.ax-m-t-5 { margin-top:5px }
+.ax-m-t-10 { margin-top:10px }
+.ax-m-b-15 { margin-bottom:15px; }
+.ax-m-b-12 { margin-bottom:12px; }
+.ax-m-b-40 { margin-bottom:40px; }
+/*============== list ==============*/
+.ax-column-1 {border-bottom: 1px solid #ddd;margin-bottom: 30px;margin-left: 25px;overflow: hidden;width: 97%;}
+.ax-column3  {float: left;padding-left: 15px;width:24%; }
+.ax-column4{float: left;padding-left: 15px;width: 13%; }
+/*============== font ==============*/
+.fnt_12 { font-size:12px }
+.fnt_13 { font-size:13px }
+.fnt_14 { font-size:14px }
+.fnt_16 { font-size:16px }
+/*============== title ==============*/
+.ax-title { position:relative; }
+.ax-title div.more { position:absolute; }
+/*============== border ==============*/
+.ax-border { border:1px solid #E1E1E1; }
+.border_none{border: 0 none!important;}
+/*============== box ==================*/
+.ax-box { display:block; }
+.ax-box-none { display:none; }
+/*===========清除浮动 触发高度===========*/
+.clear { zoom:1 }
+.clear:after { content:"."; height:0; clear:both; display:block; overflow:hidden; }
+.align_right{ text-align:right;}
+.align_left{ text-align:left!important;}
+.align_center{ text-align:center;}
+/*宽高12像素的盒子*/
+.box_12{ width:12px; height:12px; vertical-align:middle;}
+/*===========浮动===========*/
+.flt_l{ float:left;}
+.flt_r{ float:right;}
+.clear_both{clear:both;}
+.display_none{display:none;}
+.clear_x::-ms-clear{display: none;}
+/*溢出隐藏*/
+.overflow_hidden{display: inline-block;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;white-space: nowrap;}
+/*===========公用头、内容、尾===========*/
+#wrapper{height: 100%;width: 100%; min-width: 1170px;}
+/*===========左右布局===========*/
+.main-left{ width: 15%;}
+.main-right{ width:80%;}
