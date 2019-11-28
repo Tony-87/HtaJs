@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/element-ui.css">
+  <style type="text/css">
+    .el-col{
+      border:solid 1px #f00;
+    }
+    .red-input{
+      background-color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    <el-button type="primary">adf</el-button>
+    <hr>
+
+<input  type="text" class="red-input" name="">
+
+<el-input class="red-input"></el-input>
+
+<el-select></el-select>
+<hr>
+    <div>
+      <el-row>
+        <el-col :lg="5" :md="8"  :sm="8">111</el-col>
+        <el-col :lg="5" :md="8"  :sm="8">222</el-col>
+        <el-col :lg="5" :md="8"  :sm="8">333</el-col>
+        <el-col :lg="5" :md="12" :sm="12">444</el-col>
+        <el-col :lg="4" :md="12" :sm="12">555</el-col>
+      </el-row>
+    </div>
+  </div>
+
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/element-ui.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
